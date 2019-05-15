@@ -1,0 +1,588 @@
+--------- gmlogger beginning of crash
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: FATAL EXCEPTION: main
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 32552
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-17 09:07:20.127 32552 32552 E AndroidRuntime: 	... 8 more
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: FATAL EXCEPTION: main
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 9816
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-17 09:58:40.348  9816  9816 E AndroidRuntime: 	... 10 more
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: FATAL EXCEPTION: main
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 10595
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-17 10:05:54.213 10595 10595 E AndroidRuntime: 	... 10 more
+--------- gmlogger beginning of crash
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: FATAL EXCEPTION: main
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 26980
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-17 21:10:54.421 26980 26980 E AndroidRuntime: 	... 10 more
+04-17 23:09:00.271 27945 27945 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 27945 (alsa_aplay_32)
+04-17 23:09:00.271 27945 27945 F libc    : Unable to open connection to debuggerd: Connection refused
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: FATAL EXCEPTION: main
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 30367
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-17 23:19:01.188 30367 30367 E AndroidRuntime: 	... 8 more
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: Process: com.gm.gmbugreport, PID: 5497
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1411)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at android.app.FragmentManagerImpl.popBackStackImmediate(FragmentManager.java:576)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.b(SourceFile:52)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.a(SourceFile:61)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.b(SourceFile:376)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.onPostExecute(SourceFile:300)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at android.os.AsyncTask.finish(AsyncTask.java:651)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at android.os.AsyncTask.access$500(AsyncTask.java:180)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 00:07:56.355  5497  5497 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 12587
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 00:10:57.317 12587 12587 E AndroidRuntime: 	... 10 more
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 31697
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 02:36:45.566 31697 31697 E AndroidRuntime: 	... 8 more
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 3839
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 02:48:55.782  3839  3839 E AndroidRuntime: 	... 10 more
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: Process: com.gm.gmbugreport, PID: 27464
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1411)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at android.app.FragmentManagerImpl.popBackStackImmediate(FragmentManager.java:576)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.b(SourceFile:52)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.a(SourceFile:61)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.b(SourceFile:376)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.onPostExecute(SourceFile:300)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at android.os.AsyncTask.finish(AsyncTask.java:651)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at android.os.AsyncTask.access$500(AsyncTask.java:180)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 02:55:26.806 27464 27464 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 18236
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 03:20:59.213 18236 18236 E AndroidRuntime: 	... 10 more
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 15882
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 03:27:47.788 15882 15882 E AndroidRuntime: 	... 10 more
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 22360
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 03:40:35.953 22360 22360 E AndroidRuntime: 	... 10 more
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: Process: com.gm.gmbugreport, PID: 21237
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1411)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at android.app.FragmentManagerImpl.popBackStackImmediate(FragmentManager.java:576)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.b(SourceFile:52)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.a(SourceFile:61)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.b(SourceFile:376)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.onPostExecute(SourceFile:300)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at android.os.AsyncTask.finish(AsyncTask.java:651)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at android.os.AsyncTask.access$500(AsyncTask.java:180)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 04:30:33.357 21237 21237 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 5410
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 05:02:12.194  5410  5410 E AndroidRuntime: 	... 8 more
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 4074
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 05:08:10.679  4074  4074 E AndroidRuntime: 	... 10 more
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 13069
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 05:14:43.594 13069 13069 E AndroidRuntime: 	... 10 more
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 16768
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 05:31:34.820 16768 16768 E AndroidRuntime: 	... 10 more
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: Process: com.gm.gmbugreport, PID: 23508
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1411)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at android.app.FragmentManagerImpl.popBackStackImmediate(FragmentManager.java:576)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.b(SourceFile:52)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.a(SourceFile:61)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.b(SourceFile:376)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.onPostExecute(SourceFile:300)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at android.os.AsyncTask.finish(AsyncTask.java:651)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at android.os.AsyncTask.access$500(AsyncTask.java:180)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 06:49:45.228 23508 23508 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 21854
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 09:08:42.886 21854 21854 E AndroidRuntime: 	... 8 more
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 15814
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 09:42:44.431 15814 15814 E AndroidRuntime: 	... 10 more
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: Process: com.gm.gmaudioframeworktest, PID: 18003
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.gm.gmaudioframeworktest/com.gm.gmaudioframeworktest.PlayerActivity}: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3160)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3191)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2538)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.app.ActivityThread.access$900(ActivityThread.java:150)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.getStreamVolume(VehicleAudioManager.java:976)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at com.gm.gmaudioframeworktest.PlayerActivity.onResume(PlayerActivity.java:93)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6327)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3149)
+04-18 11:31:06.982 18003 18003 E AndroidRuntime: 	... 10 more
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: Process: com.siriusxm.ivi.oem.gm, PID: 22588
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: java.lang.IllegalArgumentException: Bad stream type 65535
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.setSourceMute(VehicleAudioManager.java:1077)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at com.siriusxm.ivi.oem.media.AudioFocusManager.setAudioMuteSourceInternal(AudioFocusManager.java:464)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at com.siriusxm.ivi.oem.media.AudioFocusManager.processPlaybackZoneInternal(AudioFocusManager.java:618)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at com.siriusxm.ivi.oem.media.AudioFocusManager.makeActionOnFocusGain(AudioFocusManager.java:209)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at com.siriusxm.ivi.oem.media.AudioFocusManager.onAudioFocusZoneChange(AudioFocusManager.java:148)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager$FocusEventHandlerDelegate$1.handleMessage(VehicleAudioManager.java:1764)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 13:06:50.915 22588 22588 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+--------- gmlogger beginning of crash
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: Process: com.gm.gmbugreport, PID: 5559
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1411)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at android.app.FragmentManagerImpl.popBackStackImmediate(FragmentManager.java:576)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.b(SourceFile:52)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at com.gm.gmbugreport.c.f.a(SourceFile:61)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.b(SourceFile:376)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at com.gm.gmbugreport.settings.c$a.onPostExecute(SourceFile:300)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at android.os.AsyncTask.finish(AsyncTask.java:651)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at android.os.AsyncTask.access$500(AsyncTask.java:180)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 16:53:25.816  5559  5559 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: FATAL EXCEPTION: main
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: Process: com.gm.trailer, PID: 4098
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at android.support.v4.a.v.u(SourceFile:1493)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at android.support.v4.a.v.c(SourceFile:584)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at android.support.v4.a.p.onBackPressed(SourceFile:188)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at com.gm.trailer.common.n.onClick(SourceFile:61)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at android.view.View.performClick(View.java:5231)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:21290)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:739)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-18 23:06:38.955  4098  4098 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+--------- gmlogger beginning of crash
+04-20 07:43:14.104  4194 15625 E AndroidRuntime: FATAL EXCEPTION: NanoHttpd Request Processor (#458)
+04-20 07:43:14.104  4194 15625 E AndroidRuntime: Process: com.telenav.app.denali.na, PID: 4194
+04-20 07:43:14.104  4194 15625 E AndroidRuntime: java.lang.Error: sendResponse(): Status can't be null.
+04-20 07:43:14.104  4194 15625 E AndroidRuntime: 	at fi.iki.elonen.NanoHTTPD$Response.send(SourceFile:1593)
+04-20 07:43:14.104  4194 15625 E AndroidRuntime: 	at fi.iki.elonen.NanoHTTPD$HTTPSession.execute(SourceFile:957)
+04-20 07:43:14.104  4194 15625 E AndroidRuntime: 	at fi.iki.elonen.NanoHTTPD$ClientHandler.run(SourceFile:192)
+04-20 07:43:14.104  4194 15625 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:818)
+04-20 23:26:34.723 31900 16067 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 16067 (GLThread 888)
+04-20 23:26:34.911  2034  2034 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+04-20 23:26:34.911  2034  2034 F DEBUG   : Build fingerprint: 'gm/full_gminfo36_ga/gminfo36:6.0.1/MIH21A-284/284:user/test-keys'
+04-20 23:26:34.911  2034  2034 F DEBUG   : Revision: '0'
+04-20 23:26:34.911  2034  2034 F DEBUG   : ABI: 'x86_64'
+04-20 23:26:34.911  2034  2034 F DEBUG   : pid: 31900, tid: 16067, name: GLThread 888  >>> com.gm.gmhomescreen <<<
+04-20 23:26:34.911  2034  2034 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+04-20 23:26:35.026  2034  2034 F DEBUG   : Abort message: 'terminating'
+04-20 23:26:35.026  2034  2034 F DEBUG   :     rax 0000000000000000  rbx 00007f8eb20ff500  rcx 00007f8ed0e9c997  rdx 0000000000000006
+04-20 23:26:35.026  2034  2034 F DEBUG   :     rsi 0000000000003ec3  rdi 0000000000007c9c
+04-20 23:26:35.026  2034  2034 F DEBUG   :     r8  001542100db2a1c8  r9  00007ffeb0dd9080  r10 0000000000000008  r11 0000000000000206
+04-20 23:26:35.026  2034  2034 F DEBUG   :     r12 0000000000003ec3  r13 0000000000000006  r14 00007f8eb68c5110  r15 00007f8eb20fdad0
+04-20 23:26:35.026  2034  2034 F DEBUG   :     cs  0000000000000033  ss  000000000000002b
+04-20 23:26:35.026  2034  2034 F DEBUG   :     rip 00007f8ed0e9c997  rbp 0000000000000000  rsp 00007f8eb20fd9d8  eflags 0000000000000206
+04-20 23:26:35.056  2034  2034 F DEBUG   : 
+04-20 23:26:35.056  2034  2034 F DEBUG   : backtrace:
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #00 pc 000000000008a997  /system/lib64/libc.so (tgkill+7)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #01 pc 0000000000087752  /system/lib64/libc.so (pthread_kill+66)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #02 pc 000000000002cda1  /system/lib64/libc.so (raise+17)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #03 pc 0000000000026bfe  /system/lib64/libc.so (abort+78)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #04 pc 000000000009f6c5  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x345f000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #05 pc 000000000009f789  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x345f000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #06 pc 00000000000cc892  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x345f000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #07 pc 00000000000cc914  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x345f000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #08 pc 000000000009e88c  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x345f000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #09 pc 00000000014a6939  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #10 pc 00000000014a6883  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #11 pc 0000000001493359  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #12 pc 0000000001491a53  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #13 pc 0000000000818456  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.056  2034  2034 F DEBUG   :     #14 pc 0000000000818518  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.057  2034  2034 F DEBUG   :     #15 pc 000000000080afce  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.057  2034  2034 F DEBUG   :     #16 pc 000000000080b018  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.057  2034  2034 F DEBUG   :     #17 pc 0000000000809b2e  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.057  2034  2034 F DEBUG   :     #18 pc 0000000000809bf8  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.057  2034  2034 F DEBUG   :     #19 pc 00000000008e2126  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.057  2034  2034 F DEBUG   :     #20 pc 00000000008e1ff1  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.057  2034  2034 F DEBUG   :     #21 pc 0000000000a21ec8  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.057  2034  2034 F DEBUG   :     #22 pc 0000000000a21f48  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.058  2034  2034 F DEBUG   :     #23 pc 000000000081bc57  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.058  2034  2034 F DEBUG   :     #24 pc 0000000001495cb2  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.058  2034  2034 F DEBUG   :     #25 pc 0000000001492192  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.058  2034  2034 F DEBUG   :     #26 pc 000000000149ffd6  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.058  2034  2034 F DEBUG   :     #27 pc 00000000014a3e5b  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.058  2034  2034 F DEBUG   :     #28 pc 00000000014a646f  /system/app/GMHomeScreen/GMHomeScreen.apk (offset 0x19fd000)
+04-20 23:26:35.058  2034  2034 F DEBUG   :     #29 pc 0000000000086a4f  /system/lib64/libc.so (_ZL15__pthread_startPv+47)
+04-20 23:26:35.058  2034  2034 F DEBUG   :     #30 pc 00000000000279fc  /system/lib64/libc.so (__start_thread+12)
+04-20 23:26:35.058  2034  2034 F DEBUG   :     #31 pc 000000000001c8b5  /system/lib64/libc.so (__bionic_clone+53)
+04-20 23:26:38.708  2034  2034 F DEBUG   : 
+04-20 23:26:38.708  2034  2034 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_00
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: FATAL EXCEPTION: main
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: Process: com.siriusxm.ivi.oem.gm, PID: 4502
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: java.lang.IllegalArgumentException: Bad stream type 65535
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.checkValidStreamType(VehicleAudioManager.java:422)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager.setSourceMute(VehicleAudioManager.java:1077)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at com.siriusxm.ivi.oem.media.AudioFocusManager.setAudioMuteSourceInternal(AudioFocusManager.java:464)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at com.siriusxm.ivi.oem.media.AudioFocusManager.processPlaybackZoneInternal(AudioFocusManager.java:618)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at com.siriusxm.ivi.oem.media.AudioFocusManager.makeActionOnFocusGain(AudioFocusManager.java:209)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at com.siriusxm.ivi.oem.media.AudioFocusManager.onAudioFocusZoneChange(AudioFocusManager.java:148)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at gm.media.audio.VehicleAudioManager$FocusEventHandlerDelegate$1.handleMessage(VehicleAudioManager.java:1764)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5474)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+04-20 23:32:11.463  4502  4502 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:685)
+04-21 02:27:47.818 13054 12354 F libc    : /root/remoteHudson/workspace/nav/navcore/bugfix/uturn-fix-rel/android-ndk-r15c/routingcore/src/Direction/Routing/sroutesegment.cpp:91: void SRouteSegment::getName(std::vector<SegmentName> &): assertion "NULL != segment" failed

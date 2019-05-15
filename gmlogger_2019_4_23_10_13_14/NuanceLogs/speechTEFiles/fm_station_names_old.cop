@@ -1,0 +1,24 @@
+#ECO V1.2 UTF-8
+#ECOScheme COP1 V1.6
+#EDBDatabaseID Radio_DB
+#EDBTableID fm_station_names
+#EDBTableUpdateMode AddEntryMode
+#EDBTableUpdateType FullUpdate
+#EDBTableUpdateID Radio_DB_2016-26-07
+
+#Column1 FMStationName_ID
+#Column2 FMStationName_Ortho
+
+#---FMStationName_ID---
+#CardinEDBUpdate(AddEntryMode)(FMStationName_ID) 1
+#Format(FMStationName_ID) Ident
+#AFType(FMStationName_ID) NumID
+#NumIDFormat(FMStationName_ID) Decimal
+#NumIDBinLength(FMStationName_ID) 64
+#---FMStationName_Ortho---
+#CardinEDBUpdate(AddEntryMode)(FMStationName_Ortho) 0..1
+100300;"Middle  ";
+101100;"LITHIUM ";
+101900;"  WDET  ";
+102700;" K-LOVE ";
+105100;" HERRE  ";

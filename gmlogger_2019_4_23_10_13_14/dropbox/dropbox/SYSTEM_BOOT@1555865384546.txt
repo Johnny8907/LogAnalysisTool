@@ -1,0 +1,7 @@
+Build: gm/full_gminfo36_ga/gminfo36:6.0.1/MIH21A-284/284:user/test-keys
+Hardware: bxtp_abl
+Revision: 0
+Bootloader: rel.1744-Android-HF9
+Radio: unknown
+Kernel: Linux version 4.4.138-quilt-2e5dc0ac-ga39ea26104a3 (Djenkins@dcmipavjnk007.edca.nam.gm.com-dok-jen-agt1) (gcc version 7.3.0 (GCC) ) #1 SMP PREEMPT Thu Apr 18 04:35:49 EDT 2019
+

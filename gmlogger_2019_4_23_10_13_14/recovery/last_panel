@@ -1,0 +1,10 @@
+Panel B is ready
+buf[0] : 0x01
+buf[1] : 0x01
+Serializer reset complete
+768p connected
+I2C read data :0x0e size : 2
+Display firmware version:14
+buf[0] : 0x20
+buf[1] : 0xff
+buf[2] : 0xff

@@ -1,0 +1,103 @@
+
+***************************************************
+* GFA 1.6.5.5065 - GNSDK 3.10.8 for Android (x86_64)
+* Logging started:	2019-04-21 12:49:21.303 	
+
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	[api_trace]	gnsdk_storage_sqlite_initialize( 7FA6F70A7020 )
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[118]	SQLite3 lib path:    <internal>
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[119]	SQLite3 lib version: 3.8.11.1
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[120]	SQLite3 source id:   2015-07-29 20:00:57 cf538e2783e468bbc25e7cb2a9ee64d3e0e80b2f
+2019-04-21 12:49:21.316 	INFO     	GNSDK SQLite 	0xF7C05B80	[no_source]	SQLite Initialize: Version 3.10.8  Built 2017-01-31 18:51-0800
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	[api_trace]	gnsdk_storage_sqlite_option_set( gnsdk_storage_sqlite_storage_folder, /system/media/gracenote/gndb/NA/ )
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	[no_source]	gnsdk_storage_sqlite_option_set(gnsdk_storage_sqlite_storage_folder, /system/media/gracenote/gndb/NA/)
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	[api_trace]	gnsdk_storage_sqlite_option_set( gnsdk_storage_sqlite_filesize, 102400 )
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	[no_source]	gnsdk_storage_sqlite_option_set(gnsdk_storage_sqlite_filesize, 102400)
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	[api_trace]	gnsdk_storage_sqlite_option_set( gnsdk_storage_sqlite_memsize, 20480 )
+2019-04-21 12:49:21.316 	DEBUG    	GNSDK SQLite 	0xF7C05B80	[no_source]	gnsdk_storage_sqlite_option_set(gnsdk_storage_sqlite_memsize, 20480)
+2019-04-21 12:49:21.328 	DEBUG    	GNSDK Local  	0xF7C05B80	[api_trace]	gnsdk_lookup_local_initialize( 7FA6F70A7020 )
+2019-04-21 12:49:21.341 	INFO     	GNSDK Local  	0xF7C05B80	[no_source]	Local Lookup Initialize: Version 3.10.8  Built 2017-01-31 18:51-0800
+2019-04-21 12:49:21.341 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_config_create( 7FFD762CE108 )
+2019-04-21 12:49:21.341 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_config_value_set( 7FA6F2B31D48, gnsdk_config_lookupdatabase_all_location, /system/media/gracenote/gndb/NA/ )
+2019-04-21 12:49:21.341 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_config_value_set( 7FA6F2B31D48, gnsdk_config_lookupdatabase_enable_musicid_text, 1 )
+2019-04-21 12:49:21.341 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_lookupdatabase_open( MediaManagerLookupDatabase, 7FA6F2B31D48 )
+2019-04-21 12:49:21.374 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[443]	Storage connection: gn_mdata.gdb
+2019-04-21 12:49:21.389 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[550]	SQLite: PRAGMA synchronous=NORMAL
+2019-04-21 12:49:21.402 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[576]	SQLite: PRAGMA journal_mode=DELETE
+2019-04-21 12:49:21.403 	DEBUG    	GNSDK Local  	0xF7C05B80	lookup_local_storage_helpers.c[243]	Storage opened: gn_mdata.gdb:album_storage
+2019-04-21 12:49:21.403 	DEBUG    	GNSDK Local  	0xF7C05B80	lookup_local_storage_helpers.c[243]	Storage opened: gn_mdata.gdb:contrib_storage
+2019-04-21 12:49:21.403 	DEBUG    	GNSDK Local  	0xF7C05B80	lookup_local_storage_helpers.c[243]	Storage opened: gn_mdata.gdb:audio_work_storage
+2019-04-21 12:49:21.403 	DEBUG    	GNSDK Local  	0xF7C05B80	lookup_local_storage_helpers.c[243]	Storage opened: gn_mdata.gdb:mood_mapping_table
+2019-04-21 12:49:21.404 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[443]	Storage connection: gn_itxt.gdb
+2019-04-21 12:49:21.412 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[550]	SQLite: PRAGMA synchronous=NORMAL
+2019-04-21 12:49:21.413 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[576]	SQLite: PRAGMA journal_mode=DELETE
+2019-04-21 12:49:21.414 	DEBUG    	GNSDK Local  	0xF7C05B80	lookup_local_storage_helpers.c[243]	Storage opened: gn_itxt.gdb:album_title.table
+2019-04-21 12:49:21.414 	DEBUG    	GNSDK Local  	0xF7C05B80	lookup_local_storage_helpers.c[243]	Storage opened: gn_itxt.gdb:contrib_word.table
+2019-04-21 12:49:21.414 	DEBUG    	GNSDK Local  	0xF7C05B80	lookup_local_storage_helpers.c[243]	Storage opened: gn_itxt.gdb:contrib_name.table
+2019-04-21 12:49:21.414 	DEBUG    	GNSDK Local  	0xF7C05B80	lookup_local_storage_helpers.c[243]	Storage opened: gn_itxt.gdb:contrib_album.table
+2019-04-21 12:49:21.415 	DEBUG    	GNSDK Local  	0xF7C05B80	lookup_local_storage_helpers.c[243]	Storage opened: gn_itxt.gdb:track.table
+2019-04-21 12:49:21.415 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_config_release( 7FA6F2B31D48 )
+2019-04-21 12:49:21.415 	DEBUG    	Unknown      	0xF7C05B80	[api_trace]	gnsdk_musicid_initialize( 7FA6F70A7020 )
+2019-04-21 12:49:21.441 	INFO     	GNSDK MusicID	0xF7C05B80	[no_source]	MusicID Initialize: Version 3.10.8  Built 2017-01-31 18:51-0800
+2019-04-21 12:49:21.442 	DEBUG    	GNSDK Playlst	0xF7C05B80	[api_trace]	gnsdk_playlist_initialize( 7FA6F70A7020 )
+2019-04-21 12:49:21.442 	INFO     	GNSDK Playlst	0xF7C05B80	[no_source]	Playlist Initialize: Version 3.10.8  Built 2017-01-31 18:51-0800
+2019-04-21 12:49:21.442 	DEBUG    	GNSDK Playlst	0xF7C05B80	[api_trace]	gnsdk_playlist_storage_location_set( /data/mediaFiles/ )
+2019-04-21 12:49:21.442 	DEBUG    	GNSDK Playlst	0xF7C05B80	[api_trace]	gnsdk_playlist_storage_load_collection( mms_collection, 7FA6F2AE6220 )
+2019-04-21 12:49:21.442 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[443]	Storage connection: gn_colls.gdb
+2019-04-21 12:49:21.442 	ERROR    	GNSDK Playlst	0xF7C05B80	gnsdk_playlist_storage_load_collection	Error 0x90890500 (Local data store not found.)
+2019-04-21 12:49:21.516 	DEBUG    	GNSDK Playlst	0xF7C05B80	[api_trace]	gnsdk_playlist_collection_create( mms_collection, 7FA6F2AE6220 )
+2019-04-21 12:49:21.517 	DEBUG    	GNSDK MoodGrd	0xF7C05B80	[api_trace]	gnsdk_moodgrid_initialize( 7FA6F70A7020 )
+2019-04-21 12:49:21.517 	INFO     	GNSDK MoodGrd	0xF7C05B80	[no_source]	Moodgrid Initialize: Version 3.10.8  Built 2017-01-31 18:51-0800
+2019-04-21 12:49:21.527 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_user_create( WEcxA0onazwGly3OFNEBb+4QNjdxftt4jdc+2WBi5DA7utOpwdZ5HsmgwV+sedpqCjKHIJ441sl74h+nWX0TtLJT2cN2itDgH9ObSji9pzKOZ2wF0D4WcYwgauxR9w==, 603392, 7FA6F2AE6218 )
+2019-04-21 12:49:21.529 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_user_register( gnsdk_userregmode_online, 603392, 269B31247F740C91905AF9275370FFF1, 1, 7FFD762CDBB8 )
+2019-04-21 12:49:21.530 	INFO     	GCSLHTTP       	0xF7C05B80	[no_source]	HTTP POST: http://c603392.mgr.gcsp.cddbp.net:80/gcsp/2.0
+2019-04-21 12:49:21.537 	ERROR    	GCSLSocket     	0xF7C05B80	gcsl_socket.c[1826]	getaddrinfo error: 7
+2019-04-21 12:49:21.537 	DEBUG    	GCSLSocket     	0xF7C05B80	gcsl_socket.c[1609]	getaddrinfo failed for 'c603392.mgr.gcsp.cddbp.net'
+2019-04-21 12:49:21.537 	ERROR    	GCSLSocket     	0xF7C05B80	gcsl_socket.c[1616]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.581 	ERROR    	GCSLSocket     	0xF7C05B80	gcsl_socket.c[982]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.581 	ERROR    	GCSLSocket     	0xF7C05B80	gcsl_http_impl.c[437]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.581 	WARNING  	GCSLHTTP       	0xF7C05B80	gcsl_http.c[1813]	Hostname Resolve: c603392.mgr.gcsp.cddbp.net -> Failed
+2019-04-21 12:49:21.581 	ERROR    	GCSLSocket     	0xF7C05B80	gcsl_http.c[1822]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.653 	ERROR    	GCSLSocket     	0xF7C05B80	gcsl_http.c[1491]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.653 	ERROR    	GCSLSocket     	0xF7C05B80	gcsl_http.c[993]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.653 	ERROR    	GCSLSocket     	0xF7C05B80	gcsp_connection.c[480]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.653 	ERROR    	GCSLSocket     	0xF7C05B80	gcsl_gcsp_transaction.c[1359]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.653 	ERROR    	GCSLSocket     	0xF7C05B80	gcsl_gcsp_transaction.c[211]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.653 	ERROR    	GCSLSocket     	0xF7C05B80	sdkmgr_impl_lookup_gcsp.c[904]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.653 	ERROR    	GCSLSocket     	0xF7C05B80	sdkmgr_intf_lookup.c[351]	Error 0x9004008e (The connection is not available.)
+2019-04-21 12:49:21.654 	ERROR    	GNSDK Manager	0xF7C05B80	_sdkmgr_user_register	Error 0x9080008e (The connection is not available.)
+2019-04-21 12:49:21.654 	ERROR    	GNSDK Manager	0xF7C05B80	gnsdk_manager_user_register	Error 0x9080008e (The connection is not available.)
+2019-04-21 12:49:21.654 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_error_info
+2019-04-21 12:49:21.654 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_user_register( gnsdk_userregmode_localonly, 603392, 269B31247F740C91905AF9275370FFF1, 1, 7FFD762CDBB8 )
+2019-04-21 12:49:21.654 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_user_create( WEcxA464ABgGly3O1isMOw6iPb2Iu84pQSPVAreOAA9rGp95dHD0aa3F+Mbje3A4Z1l6EL5n1+UHdJVYC56e+DEBi2C+4OxXZ7a04lI3GZeaa225XAmLcau8NvjsdQ==, 603392, 7FA6F2AE6218 )
+2019-04-21 12:49:21.654 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_string_free( 7FA6F26751B8 )
+2019-04-21 12:49:21.654 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_user_option_set( 7FA6F2CD4858, gnsdk_useroption_lookup_mode, gnsdk_lookupmode_local )
+2019-04-21 12:49:21.654 	DEBUG    	GNSDK Manager	0xF7C05B80	[no_source]	gnsdk_manager_user_option_set( 7FA6F2CD4858, gnsdk_useroption_lookup_mode, gnsdk_lookupmode_local )
+2019-04-21 12:49:21.654 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_locale_load( gnsdk_locale_music, eng, (null), gnsdk_desc_simplified, 7FA6F2CD4858, 0, 0, 7FFD762CE108 )
+2019-04-21 12:49:21.654 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[443]	Storage connection: gn_lists.gdb
+2019-04-21 12:49:21.664 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[550]	SQLite: PRAGMA synchronous=NORMAL
+2019-04-21 12:49:21.689 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[576]	SQLite: PRAGMA journal_mode=DELETE
+2019-04-21 12:49:21.700 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[443]	Storage connection: gn_lists.gdb
+2019-04-21 12:49:21.700 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[550]	SQLite: PRAGMA synchronous=NORMAL
+2019-04-21 12:49:21.701 	DEBUG    	GNSDK SQLite 	0xF7C05B80	sqlite_storage_helpers.c[576]	SQLite: PRAGMA journal_mode=DELETE
+2019-04-21 12:49:21.702 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: LANGUAGES  language: 1
+2019-04-21 12:49:21.726 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: GENRES-US-SIMPLIFIED  language: 1
+2019-04-21 12:49:21.726 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: GENRES-V1-TO-V2  language: not applicable
+2019-04-21 12:49:21.727 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: GENREMAPS  language: not applicable
+2019-04-21 12:49:21.727 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: GENRE_CDS_MAP  language: not applicable
+2019-04-21 12:49:21.727 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: ORIGINS-DEFAULT  language: 1
+2019-04-21 12:49:21.727 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: ERAS-DEFAULT  language: 1
+2019-04-21 12:49:21.728 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: ARTISTTYPES-DEFAULT  language: 1
+2019-04-21 12:49:21.728 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: ROLES  language: 1
+2019-04-21 12:49:21.728 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: TEMPO-DEFAULT  language: 1
+2019-04-21 12:49:21.729 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: MOODS-GN-DEFAULT  language: 1
+2019-04-21 12:49:21.729 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: COMPOSITION-FORM-DEFAULT-V2  language: 1
+2019-04-21 12:49:21.730 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_locale_set_group_default( 7FA6F2CDC738 )
+2019-04-21 12:49:21.730 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_locale_release
+2019-04-21 12:49:21.730 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_locale_load( gnsdk_locale_playlist, eng, (null), gnsdk_desc_simplified, 7FA6F2CD4858, 0, 0, 7FFD762CE108 )
+2019-04-21 12:49:21.731 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: GENRECORRELATES-DEFAULT-MICRO  language: not applicable
+2019-04-21 12:49:21.732 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: ORIGINSCORRELATES-DEFAULT-MICRO-V2  language: not applicable
+2019-04-21 12:49:21.732 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: ERASCORRELATES-DEFAULT-MICRO-V2  language: not applicable
+2019-04-21 12:49:21.732 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: ARTISTTYPESCORRELATES-DEFAULT-MICRO-V2  language: not applicable
+2019-04-21 12:49:21.732 	INFO     	GNSDK Manager	0xF7C05B80	sdkmgr_impl_lists_storage.c[3092]	List retrieved from local storage: MOODCORRELATES-DEFAULT-MACRO-V2  language: not applicable
+2019-04-21 12:49:21.733 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_locale_set_group_default( 7FA6F2CDE628 )
+2019-04-21 12:49:21.733 	DEBUG    	GNSDK Manager	0xF7C05B80	[api_trace]	gnsdk_manager_locale_release

@@ -1,0 +1,15 @@
+#ECO V1.2 UTF-8;
+#ECOScheme COP1 V1.6
+#DefinitionFileDirectory /data/speechTEFiles/
+#EDBDatabaseID info30_picklist
+#EDBTableID info30_picklist_phonedevice_list
+#EDBTableUpdateType FullUpdate
+#EDBTableUpdateMode AddEntryMode
+#EDBTableUpdateID info30_picklist_phonedevice_list_2014_04_07
+#Column1 Entry_ID
+#Column2 Entry_Ortho
+#Column3 BTAddress_Ortho
+# ---Entry_ID---
+#Format(Entry_ID) Ident
+#NumIDFormat(Entry_ID) Decimal
+#NumIDBinLength(Entry_ID) 64

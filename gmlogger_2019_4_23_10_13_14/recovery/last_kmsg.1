@@ -1,0 +1,899 @@
+<6>[    0.000000] Initializing cgroup subsys cpuset
+<6>[    0.000000] Initializing cgroup subsys cpu
+<6>[    0.000000] Initializing cgroup subsys cpuacct
+<5>[    0.000000] Linux version 4.4.138-quilt-2e5dc0ac-ga39ea26104a3 (Djenkins@dcmipavjnk007.edca.nam.gm.com-dok-jen-agt1) (gcc version 7.3.0 (GCC) ) #1 SMP PREEMPT Thu Apr 18 04:35:49 EDT 2019
+<6>[    0.000000] Command line: clocksource=tsc tsc=reliable acpi_pm_good i915.avail_planes_per_pipe=0x000003 androidboot.trustyimpl=-ghs drm_kms_helper.edid_firmware=edid/harman0768p.bin ABL.secureboot=0 androidboot.bootloader=rel.1744-Android-HF9 androidboot.serialno=R1J56L39eda8d6 androidboot.bootreason=power-on no_timer_check noxsaves reboot_panic=p,w cpu_init_udelay=10 i915.hpd_sense_invert=0x7 drm.debug=0xa intel_iommu=off loglevel=2 androidboot.hardware=bxtp_abl firmware_class.path=/vendor/firmware relative_sleep_states=1 video=eDP-1:d video=HDMI-A-1:e video=HDMI-A-2:d video=DP-1:d video=DP-2:d video=DP-3:d enforcing=0 androidboot.selinux=permissive gpt drm.atomic=1 i915.nuclear_pageflip=1 i915.enable_rc6=1 i915.enable_fbc=1 vga=current i915.modeset=1 drm.vblankoffdelay=1 i915.fastboot=1 drm.debug=0xe thermal.off=1 console=hvc0           pstore.backend=ramoops memmap=0x400000$0x50000000 ramoops.mem_address=0x50000000 ramoops.mem_size=0x400000 ramoops.record_size=0x4000 ramoops.console_<6>[    0.000000] x86/fpu: Supporting XSAVE feature 0x01: 'x87 floating point registers'
+<6>[    0.000000] x86/fpu: Supporting XSAVE feature 0x02: 'SSE registers'
+<6>[    0.000000] x86/fpu: Enabled xstate features 0x3, context size is 576 bytes, using 'standard' format.
+<6>[    0.000000] e820: BIOS-provided physical RAM map:
+<6>[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+<6>[    0.000000] BIOS-e820: [mem 0x000000000009f000-0x000000000009ffff] reserved
+<6>[    0.000000] BIOS-e820: [mem 0x00000000000e8000-0x00000000000fffff] reserved
+<6>[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000007ffeffff] usable
+<6>[    0.000000] BIOS-e820: [mem 0x000000007fff0000-0x000000007fffffff] ACPI data
+<6>[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+<6>[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x0000000166ffffff] usable
+<6>[    0.000000] NX (Execute Disable) protection: active
+<6>[    0.000000] e820: user-defined physical RAM map:
+<6>[    0.000000] user: [mem 0x0000000000000000-0x000000000009efff] usable
+<6>[    0.000000] user: [mem 0x000000000009f000-0x000000000009ffff] reserved
+<6>[    0.000000] user: [mem 0x00000000000e8000-0x00000000000fffff] reserved
+<6>[    0.000000] user: [mem 0x0000000000100000-0x000000004fffffff] usable
+<6>[    0.000000] user: [mem 0x0000000050000000-0x00000000503fffff] reserved
+<6>[    0.000000] user: [mem 0x0000000050400000-0x000000007ffeffff] usable
+<6>[    0.000000] user: [mem 0x000000007fff0000-0x000000007fffffff] ACPI data
+<6>[    0.000000] user: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+<6>[    0.000000] user: [mem 0x0000000100000000-0x0000000166ffffff] usable
+<6>[    0.000000] Hypervisor detected: GHS VMM
+<6>[    0.000000] GHS_VMM: TSC_FREQ = 1881600000
+<7>[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+<7>[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+<6>[    0.000000] e820: last_pfn = 0x167000 max_arch_pfn = 0x400000000
+<7>[    0.000000] MTRR default type: uncachable
+<7>[    0.000000] MTRR variable ranges disabled:
+<6>[    0.000000] MTRR: Disabled
+<6>[    0.000000] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+<6>[    0.000000] CPU MTRRs all blank - virtualized system.
+<6>[    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+<6>[    0.000000] e820: last_pfn = 0x7fff0 max_arch_pfn = 0x400000000
+<6>[    0.000000] Scanning 1 areas for low memory corruption
+<7>[    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+<6>[    0.000000] Using GB pages for direct mapping
+<7>[    0.000000] BRK [0x02d97000, 0x02d97fff] PGTABLE
+<7>[    0.000000] BRK [0x02d98000, 0x02d98fff] PGTABLE
+<7>[    0.000000] BRK [0x02d99000, 0x02d99fff] PGTABLE
+<7>[    0.000000] BRK [0x02d9a000, 0x02d9afff] PGTABLE
+<7>[    0.000000] BRK [0x02d9b000, 0x02d9bfff] PGTABLE
+<6>[    0.000000] RAMDISK: [mem 0x11000000-0x1226efff]
+<6>[    0.000000] ACPI: Early table checksum verification disabled
+<4>[    0.000000] ACPI: RSDP 0x00000000000FFF00 5AF04BE0 (v01 IGS   )
+<4>[    0.000000] ACPI: RSDT 0x000000007FFF0000 000030 (v01 IGS    IGS      00000001 IGS  00000001)
+<4>[    0.000000] ACPI: FACP 0x000000007FFF2060 0000F4 (v01 IGS    IGS      00000001 IGS  00000001)
+<4>[    0.000000] ACPI: DSDT 0x000000007FFF00C0 001F9A (v16 IGS    IGS_DSDT 00000001 INTL 20160108)
+<4>[    0.000000] ACPI: FACS 0x000000007FFF0080 000040
+<4>[    0.000000] ACPI: APIC 0x000000007FFF2160 000062 (v01 IGS    IGS      00000001 IGS  00000001)
+<4>[    0.000000] ACPI: NHLT 0x000000007FFF21D0 0006E9 (v00 INTEL  NHLT-GPA 00000003 NTET 00000003)
+<7>[    0.000000] ACPI: Local APIC address 0xfee00000
+<6>[    0.000000] Zone ranges:
+<6>[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+<6>[    0.000000]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+<6>[    0.000000]   Normal   [mem 0x0000000100000000-0x0000000166ffffff]
+<6>[    0.000000] Movable zone start for each node
+<6>[    0.000000] Early memory node ranges
+<6>[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+<6>[    0.000000]   node   0: [mem 0x0000000000100000-0x000000004fffffff]
+<6>[    0.000000]   node   0: [mem 0x0000000050400000-0x000000007ffeffff]
+<6>[    0.000000]   node   0: [mem 0x0000000100000000-0x0000000166ffffff]
+<6>[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x0000000166ffffff]
+<7>[    0.000000] On node 0 totalpages: 945038
+<7>[    0.000000]   DMA zone: 64 pages used for memmap
+<7>[    0.000000]   DMA zone: 21 pages reserved
+<7>[    0.000000]   DMA zone: 3998 pages, LIFO batch:0
+<7>[    0.000000]   DMA32 zone: 8112 pages used for memmap
+<7>[    0.000000]   DMA32 zone: 519152 pages, LIFO batch:31
+<7>[    0.000000]   Normal zone: 6592 pages used for memmap
+<7>[    0.000000]   Normal zone: 421888 pages, LIFO batch:31
+<6>[    0.000000] ACPI: PM-Timer IO Port: 0xb008
+<7>[    0.000000] ACPI: Local APIC address 0xfee00000
+<6>[    0.000000] IOAPIC[0]: apic_id 4, version 17, address 0xfec00000, GSI 0-119
+<6>[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+<7>[    0.000000] ACPI: IRQ0 used by override.
+<7>[    0.000000] ACPI: IRQ9 used by override.
+<6>[    0.000000] Using ACPI (MADT) for SMP configuration information
+<6>[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+<6>[    0.000000] e820: [mem 0x80000000-0xfffbffff] available for PCI devices
+<6>[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+<6>[    0.000000] setup_percpu: NR_CPUS:32 nr_cpumask_bits:32 nr_cpu_ids:4 nr_node_ids:1
+<6>[    0.000000] PERCPU: Embedded 32 pages/cpu @ffff880166c00000 s91672 r8192 d31208 u524288
+<7>[    0.000000] pcpu-alloc: s91672 r8192 d31208 u524288 alloc=1*2097152
+<7>[    0.000000] pcpu-alloc: [0] 0 1 2 3 
+<6>[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 930249
+<5>[    0.000000] Kernel command line: clocksource=tsc tsc=reliable acpi_pm_good i915.avail_planes_per_pipe=0x000003 androidboot.trustyimpl=-ghs drm_kms_helper.edid_firmware=edid/harman0768p.bin ABL.secureboot=0 androidboot.bootloader=rel.1744-Android-HF9 androidboot.serialno=R1J56L39eda8d6 androidboot.bootreason=power-on no_timer_check noxsaves reboot_panic=p,w cpu_init_udelay=10 i915.hpd_sense_invert=0x7 drm.debug=0xa intel_iommu=off loglevel=2 androidboot.hardware=bxtp_abl firmware_class.path=/vendor/firmware relative_sleep_states=1 video=eDP-1:d video=HDMI-A-1:e video=HDMI-A-2:d video=DP-1:d video=DP-2:d video=DP-3:d enforcing=0 androidboot.selinux=permissive gpt drm.atomic=1 i915.nuclear_pageflip=1 i915.enable_rc6=1 i915.enable_fbc=1 vga=current i915.modeset=1 drm.vblankoffdelay=1 i915.fastboot=1 drm.debug=0xe thermal.off=1 console=hvc0           pstore.backend=ramoops memmap=0x400000$0x50000000 ramoops.mem_address=0x50000000 ramoops.mem_size=0x400000 ramoops.record_size=0x4000 ramoops.c<4>[    0.000000] Setting dangerous option i915.avail_planes_per_pipe - tainting kernel
+<4>[    0.000000] Setting dangerous option i915.hpd_sense_invert - tainting kernel
+<6>[    0.000000] DMAR: IOMMU disabled
+<4>[    0.000000] Setting dangerous option i915.nuclear_pageflip - tainting kernel
+<4>[    0.000000] Setting dangerous option i915.enable_rc6 - tainting kernel
+<4>[    0.000000] Setting dangerous option i915.enable_fbc - tainting kernel
+<6>[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+<6>[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+<6>[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+<6>[    0.000000] Memory: 3598512K/3780152K available (10491K kernel code, 1412K rwdata, 5520K rodata, 1196K init, 9220K bss, 181640K reserved, 0K cma-reserved)
+<6>[    0.000000] Preemptible hierarchical RCU implementation.
+<6>[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+<6>[    0.000000] 	RCU restricting CPUs from NR_CPUS=32 to nr_cpu_ids=4.
+<6>[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=4
+<6>[    0.000000] NR_IRQS:4352 nr_irqs:1024 16
+<6>[    0.000000] console [hvc0] enabled
+<6>[    0.000000] tsc: Detected 1881.600 MHz processor
+<6>[    0.000040] Calibrating delay loop (skipped), value calculated using timer frequency.. 3763.20 BogoMIPS (lpj=1881600)
+<6>[    0.000045] pid_max: default: 32768 minimum: 301
+<6>[    0.000059] ACPI: Core revision 20150930
+<4>[    0.001277] ACPI: 1 ACPI AML tables successfully acquired and loaded
+<6>[    0.001310] Security Framework initialized
+<6>[    0.001314] SELinux:  Initializing.
+<7>[    0.001327] SELinux:  Starting in permissive mode
+<6>[    0.001357] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+<6>[    0.001360] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+<6>[    0.001656] Initializing cgroup subsys memory
+<6>[    0.001668] Initializing cgroup subsys freezer
+<6>[    0.002456] CPU: Physical Processor ID: 0
+<6>[    0.002459] CPU: Processor Core ID: 0
+<6>[    0.009223] Last level iTLB entries: 4KB 48, 2MB 0, 4MB 0
+<6>[    0.009226] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+<6>[    0.009235] Spectre V2 : Mitigation: Full generic retpoline
+<6>[    0.009236] Spectre V2 : Filling RSB on context switch
+<6>[    0.009684] Freeing SMP alternatives memory: 32K
+<6>[    0.009735] ftrace: allocating 37982 entries in 149 pages
+<6>[    0.067569] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+<7>[    0.067762] TSC deadline timer enabled
+<6>[    0.067770] smpboot: CPU0: Intel IoT CPU 1.0 (family: 0x6, model: 0x5c, stepping: 0x9)
+<6>[    0.067808] Performance Events: unsupported p6 CPU model 92 no PMU driver, software events only.
+<6>[    0.077040] x86: Booting SMP configuration:
+<6>[    0.077046] .... node  #0, CPUs:      #1 #2 #3
+<6>[    0.108022] Skipped synchronization checks as TSC is reliable.
+<6>[    0.108045] x86: Booted up 1 node, 4 CPUs
+<6>[    0.108049] smpboot: Total of 4 processors activated (15052.80 BogoMIPS)
+<6>[    0.108785] CPU3: update max cpu_capacity 1024
+<6>[    0.112392] CPU2: update max cpu_capacity 1024
+<6>[    0.113794] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+<6>[    0.113806] futex hash table entries: 1024 (order: 4, 65536 bytes)
+<6>[    0.114222] pinctrl core: initialized pinctrl subsystem
+<6>[    0.115014] RTC time: 11:11:12, date: 11/11/11
+<6>[    0.115485] NET: Registered protocol family 16
+<6>[    0.116004] ramoops: using module parameters
+<6>[    0.116816] console [pstore-1] enabled
+<6>[    0.117022] pstore: Registered ramoops as persistent store backend
+<6>[    0.117028] ramoops: attached 0x400000@0x50000000, ecc: 0/0
+<6>[    0.122534] cpuidle: using governor menu
+<6>[    0.123032] bxt-board: registering BXT PWM devices...
+<6>[    0.123043] bxt-board: registering BXT SPI devices...
+<6>[    0.123051] bxt-boardoakland_i2c_devs7 register ret value 0
+<6>[    0.123055] bxt-board: registering BXT NFC Device ... 
+<6>[    0.123063] ACPI: bus type PCI registered
+<6>[    0.123067] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+<6>[    0.123447] PCI: Using configuration type 1 for base access
+<6>[    0.163884] ACPI: Added _OSI(Module Device)
+<6>[    0.163895] ACPI: Added _OSI(Processor Device)
+<6>[    0.163899] ACPI: Added _OSI(3.0 _SCP Extensions)
+<6>[    0.163903] ACPI: Added _OSI(Processor Aggregator Device)
+<6>[    0.168544] ACPI: Interpreter enabled
+<6>[    0.168565] ACPI: (supports S0 S3 S5)
+<6>[    0.168570] ACPI: Using IOAPIC for interrupt routing
+<6>[    0.168723] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+<6>[    0.172876] ACPI: Power Resource [FN00] (on)
+<6>[    0.173437] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+<6>[    0.173450] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+<6>[    0.173552] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+<4>[    0.173562] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+<6>[    0.173961] PCI host bridge to bus 0000:00
+<6>[    0.173970] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+<6>[    0.173975] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+<6>[    0.173981] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+<6>[    0.173987] pci_bus 0000:00: root bus resource [mem 0x80000000-0xfebfffff window]
+<6>[    0.173993] pci_bus 0000:00: root bus resource [bus 00-ff]
+<7>[    0.174087] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+<7>[    0.175389] pci 0000:00:02.0: [8086:5a84] type 00 class 0x030000
+<7>[    0.175915] pci 0000:00:02.0: reg 0x10: [mem 0xf0000000-0xf0ffffff]
+<7>[    0.176247] pci 0000:00:02.0: reg 0x18: [mem 0x80000000-0x8fffffff pref]
+<7>[    0.176687] pci 0000:00:02.0: reg 0x20: [io  0x2000-0x203f]
+<7>[    0.178054] pci 0000:00:03.0: [1b95:a000] type 00 class 0x000000
+<7>[    0.178617] pci 0000:00:03.0: reg 0x10: [io  0x3000-0x3fff]
+<7>[    0.179759] pci 0000:00:03.0: reg 0x24: [mem 0xf1000000-0xf1001fff]
+<7>[    0.180882] pci 0000:00:08.0: [14e4:43ef] type 00 class 0x028000
+<7>[    0.181338] pci 0000:00:08.0: reg 0x10: [mem 0xf1008000-0xf100ffff]
+<7>[    0.181786] pci 0000:00:08.0: reg 0x18: [mem 0xf1400000-0xf17fffff]
+<7>[    0.183031] pci 0000:00:08.0: supports D1 D2
+<7>[    0.183037] pci 0000:00:08.0: PME# supported from D0 D1 D2 D3hot D3cold
+<7>[    0.183803] pci 0000:00:0e.0: [8086:5a98] type 00 class 0x040300
+<7>[    0.184662] pci 0000:00:0e.0: reg 0x10: [mem 0xf1800000-0xf1803fff]
+<7>[    0.187208] pci 0000:00:0e.0: reg 0x20: [mem 0xf1900000-0xf19fffff]
+<7>[    0.188871] pci 0000:00:0e.0: PME# supported from D0 D3hot D3cold
+<6>[    0.189156] pci 0000:00:0e.0: System wakeup disabled by ACPI
+<7>[    0.189618] pci 0000:00:13.0: [1b95:bbbb] type 01 class 0x060400
+<7>[    0.190889] pci 0000:00:13.0: PME# supported from D0 D3hot D3cold
+<7>[    0.191617] pci 0000:00:15.0: [8086:5aa8] type 00 class 0x0c0330
+<7>[    0.192171] pci 0000:00:15.0: reg 0x10: [mem 0xf1b00000-0xf1b0ffff]
+<7>[    0.193777] pci 0000:00:15.0: PME# supported from D3hot D3cold
+<7>[    0.194267] pci 0000:00:15.1: [8086:5aaa] type 00 class 0x0c03fe
+<7>[    0.194779] pci 0000:00:15.1: reg 0x10: [mem 0xf1c00000-0xf1dfffff]
+<7>[    0.196139] pci 0000:00:15.1: PME# supported from D0 D3hot
+<6>[    0.196341] pci 0000:00:15.1: System wakeup disabled by ACPI
+<7>[    0.196873] pci 0000:00:16.0: [8086:5aac] type 00 class 0x118000
+<7>[    0.197318] pci 0000:00:16.0: reg 0x10: [mem 0xf1e00000-0xf1e00fff]
+<7>[    0.197700] pci 0000:00:16.0: reg 0x18: [mem 0xf1e01000-0xf1e01fff]
+<7>[    0.199419] pci 0000:00:16.1: [8086:5aae] type 00 class 0x118000
+<7>[    0.199942] pci 0000:00:16.1: reg 0x10: [mem 0xf1e02000-0xf1e02fff]
+<7>[    0.200261] pci 0000:00:16.1: reg 0x18: [mem 0xf1e03000-0xf1e03fff]
+<7>[    0.201983] pci 0000:00:16.2: [8086:5ab0] type 00 class 0x118000
+<7>[    0.202423] pci 0000:00:16.2: reg 0x10: [mem 0xf1e04000-0xf1e04fff]
+<7>[    0.202751] pci 0000:00:16.2: reg 0x18: [mem 0xf1e05000-0xf1e05fff]
+<7>[    0.204559] pci 0000:00:16.3: [8086:5ab2] type 00 class 0x118000
+<7>[    0.205089] pci 0000:00:16.3: reg 0x10: [mem 0xf1e06000-0xf1e06fff]
+<7>[    0.205397] pci 0000:00:16.3: reg 0x18: [mem 0xf1e07000-0xf1e07fff]
+<7>[    0.205883] pci 0000:00:16.3: reg 0x24: [mem 0xf1e08000-0xf1e08fff]
+<7>[    0.207352] pci 0000:00:17.0: [8086:5ab4] type 00 class 0x118000
+<7>[    0.207794] pci 0000:00:17.0: reg 0x10: [mem 0xf1e09000-0xf1e09fff]
+<7>[    0.208206] pci 0000:00:17.0: reg 0x18: [mem 0xf1e0a000-0xf1e0afff]
+<7>[    0.209897] pci 0000:00:17.1: [8086:5ab6] type 00 class 0x118000
+<7>[    0.210418] pci 0000:00:17.1: reg 0x10: [mem 0xf1e0b000-0xf1e0bfff]
+<7>[    0.210737] pci 0000:00:17.1: reg 0x18: [mem 0xf1e0c000-0xf1e0cfff]
+<7>[    0.212510] pci 0000:00:17.3: [8086:5aba] type 00 class 0x118000
+<7>[    0.212945] pci 0000:00:17.3: reg 0x10: [mem 0xf1e0d000-0xf1e0dfff]
+<7>[    0.213369] pci 0000:00:17.3: reg 0x18: [mem 0xf1e0e000-0xf1e0efff]
+<7>[    0.213827] pci 0000:00:17.3: reg 0x24: [mem 0xf1e0f000-0xf1e0ffff]
+<7>[    0.215202] pci 0000:00:18.0: [8086:5abc] type 00 class 0x118000
+<7>[    0.215674] pci 0000:00:18.0: reg 0x10: [mem 0xf1e10000-0xf1e10fff]
+<7>[    0.215993] pci 0000:00:18.0: reg 0x18: [mem 0xf1e11000-0xf1e11fff]
+<7>[    0.217570] pci 0000:00:18.3: [8086:5aee] type 00 class 0x118000
+<7>[    0.218012] pci 0000:00:18.3: reg 0x10: [mem 0xf1e12000-0xf1e12fff]
+<7>[    0.218438] pci 0000:00:18.3: reg 0x18: [mem 0xf1e13000-0xf1e13fff]
+<7>[    0.220031] pci 0000:00:19.0: [8086:5ac2] type 00 class 0x118000
+<7>[    0.220573] pci 0000:00:19.0: reg 0x10: [mem 0xf1e14000-0xf1e14fff]
+<7>[    0.220893] pci 0000:00:19.0: reg 0x18: [mem 0xf1e15000-0xf1e15fff]
+<7>[    0.222668] pci 0000:00:19.1: [8086:5ac4] type 00 class 0x118000
+<7>[    0.223110] pci 0000:00:19.1: reg 0x10: [mem 0xf1e16000-0xf1e16fff]
+<7>[    0.223429] pci 0000:00:19.1: reg 0x18: [mem 0xf1e17000-0xf1e17fff]
+<7>[    0.225244] pci 0000:00:19.2: [8086:5ac6] type 00 class 0x118000
+<7>[    0.225758] pci 0000:00:19.2: reg 0x10: [mem 0xf1e18000-0xf1e18fff]
+<7>[    0.226077] pci 0000:00:19.2: reg 0x18: [mem 0xf1e19000-0xf1e19fff]
+<7>[    0.228047] pci 0000:00:1c.0: [1af4:1042] type 00 class 0x000000
+<7>[    0.228871] pci 0000:00:1c.0: reg 0x10: [io  0x5000-0x50ff]
+<7>[    0.229629] pci 0000:00:1c.0: reg 0x24: [mem 0xf1e1a000-0xf1e1bfff]
+<7>[    0.231168] pci 0000:00:1d.0: [1af4:1043] type 00 class 0x000000
+<7>[    0.231960] pci 0000:00:1d.0: reg 0x10: [io  0x5100-0x51ff]
+<7>[    0.232719] pci 0000:00:1d.0: reg 0x24: [mem 0xf1e1c000-0xf1e1dfff]
+<7>[    0.235014] pci 0000:01:00.0: [8086:157c] type 00 class 0x020000
+<7>[    0.235544] pci 0000:01:00.0: reg 0x10: [mem 0xf1a00000-0xf1a1ffff]
+<7>[    0.236057] pci 0000:01:00.0: reg 0x18: [io  0x4000-0x401f]
+<7>[    0.236286] pci 0000:01:00.0: reg 0x1c: [mem 0xf1a20000-0xf1a23fff]
+<7>[    0.236769] pci 0000:01:00.0: reg 0x24: [mem 0xf1a24000-0xf1a25fff]
+<7>[    0.237618] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+<6>[    0.238377] pci 0000:00:13.0: PCI bridge to [bus 01]
+<7>[    0.238424] pci 0000:00:13.0:   bridge window [io  0x4000-0x4fff]
+<7>[    0.238470] pci 0000:00:13.0:   bridge window [mem 0xf1a00000-0xf1afffff]
+<7>[    0.238637] pci_bus 0000:00: on NUMA node 0
+<6>[    0.243200] vgaarb: setting as boot device: PCI:0000:00:02.0
+<6>[    0.243211] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+<6>[    0.243226] vgaarb: loaded
+<6>[    0.243231] vgaarb: bridge control possible 0000:00:02.0
+<5>[    0.243745] SCSI subsystem initialized
+<6>[    0.244385] ACPI: bus type USB registered
+<6>[    0.244646] usbcore: registered new interface driver usbfs
+<6>[    0.244770] usbcore: registered new interface driver hub
+<6>[    0.245028] usbcore: registered new device driver usb
+<6>[    0.245848] media: Linux media interface: v0.10
+<6>[    0.245945] Linux video capture interface: v2.00
+<6>[    0.246207] pps_core: LinuxPPS API ver. 1 registered
+<6>[    0.246211] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+<6>[    0.246344] PTP clock support registered
+<6>[    0.247741] Advanced Linux Sound Architecture Driver Initialized.
+<6>[    0.247752] PCI: Using ACPI for IRQ routing
+<7>[    0.247757] PCI: pci_cache_line_size set to 64 bytes
+<7>[    0.248810] e820: reserve RAM buffer [mem 0x0009f000-0x0009ffff]
+<7>[    0.248817] e820: reserve RAM buffer [mem 0x7fff0000-0x7fffffff]
+<7>[    0.248821] e820: reserve RAM buffer [mem 0x167000000-0x167ffffff]
+<6>[    0.250027] nfc: nfc_init: NFC Core ver 0.1
+<6>[    0.250134] NET: Registered protocol family 39
+<6>[    0.250793] clocksource: Switched to clocksource refined-jiffies
+<6>[    0.250873] Trying to unpack rootfs image as initramfs...
+<5>[    0.269301] Initialise system trusted keyring
+<5>[    0.269437] Key type asymmetric registered
+<5>[    0.269444] Asymmetric key parser 'x509' registered
+<6>[    0.269962] pnp: PnP ACPI init
+<7>[    0.270186] pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+<6>[    0.270289] pnp: PnP ACPI: found 1 devices
+<7>[    0.272550] [drm:i915_driver_load] No PCH found.
+<7>[    0.272567] [drm:intel_power_domains_init] Allowed DC state mask 09
+<7>[    0.272786] [drm:intel_device_info_dump] i915 device info: platform=BROXTON gen=9 pciid=0x5a84 rev=0x0a
+<7>[    0.272793] [drm:intel_device_info_dump] i915 device info: is_mobile: no[drm:intel_device_info_dump] i915 device info: is_lp: yes
+<7>[    0.272803] [drm:intel_device_info_dump] i915 device info: is_alpha_support: no[drm:intel_device_info_dump] i915 device info: has_64bit_reloc: yes
+<7>[    0.272813] [drm:intel_device_info_dump] i915 device info: has_aliasing_ppgtt: yes[drm:intel_device_info_dump] i915 device info: has_csr: yes
+<7>[    0.272823] [drm:intel_device_info_dump] i915 device info: has_ddi: yes[drm:intel_device_info_dump] i915 device info: has_decoupled_mmio: yes
+<7>[    0.272833] [drm:intel_device_info_dump] i915 device info: has_dp_mst: yes[drm:intel_device_info_dump] i915 device info: has_reset_engine: yes
+<7>[    0.272844] [drm:intel_device_info_dump] i915 device info: has_fbc: yes[drm:intel_device_info_dump] i915 device info: has_fpga_dbg: yes
+<7>[    0.272853] [drm:intel_device_info_dump] i915 device info: has_full_ppgtt: yes[drm:intel_device_info_dump] i915 device info: has_full_48bit_ppgtt: yes
+<7>[    0.272863] [drm:intel_device_info_dump] i915 device info: has_gmbus_irq: yes[drm:intel_device_info_dump] i915 device info: has_gmch_display: no
+<7>[    0.272872] [drm:intel_device_info_dump] i915 device info: has_guc: yes[drm:intel_device_info_dump] i915 device info: has_hotplug: yes
+<7>[    0.272882] [drm:intel_device_info_dump] i915 device info: has_hw_contexts: yes[drm:intel_device_info_dump] i915 device info: has_l3_dpf: no
+<7>[    0.272892] [drm:intel_device_info_dump] i915 device info: has_llc: no[drm:intel_device_info_dump] i915 device info: has_logical_ring_contexts: yes
+<7>[    0.272936] [drm:intel_device_info_dump] i915 device info: has_overlay: no[drm:intel_device_info_dump] i915 device info: has_pipe_cxsr: no
+<7>[    0.272947] [drm:intel_device_info_dump] i915 device info: has_pooled_eu: no[drm:intel_device_info_dump] i915 device info: has_psr: no
+<7>[    0.272957] [drm:intel_device_info_dump] i915 device info: has_rc6: yes[drm:intel_device_info_dump] i915 device info: has_rc6p: no
+<7>[    0.272966] [drm:intel_device_info_dump] i915 device info: has_resource_streamer: yes[drm:intel_device_info_dump] i915 device info: has_runtime_pm: yes
+<7>[    0.272976] [drm:intel_device_info_dump] i915 device info: has_snoop: no[drm:intel_device_info_dump] i915 device info: has_trtt: yes
+<7>[    0.272986] [drm:intel_device_info_dump] i915 device info: cursor_needs_physical: no[drm:intel_device_info_dump] i915 device info: hws_needs_physical: no
+<7>[    0.272996] [drm:intel_device_info_dump] i915 device info: overlay_needs_physical: no[drm:intel_device_info_dump] i915 device info: supports_tv: no
+<6>[    0.273441] [drm] Virtual GPU for Intel GVT-g detected.
+<6>[    0.273664] [drm] GVTG_LEVEL = 0x0000fe8e
+<7>[    0.275609] [drm:intel_device_info_runtime_init] slice mask: 0001
+<7>[    0.275617] [drm:intel_device_info_runtime_init] slice total: 1
+<7>[    0.275624] [drm:intel_device_info_runtime_init] subslice total: 3
+<7>[    0.275631] [drm:intel_device_info_runtime_init] subslice mask 0007
+<7>[    0.275638] [drm:intel_device_info_runtime_init] subslice per slice: 3
+<7>[    0.275644] [drm:intel_device_info_runtime_init] EU total: 18
+<7>[    0.275650] [drm:intel_device_info_runtime_init] EU per subslice: 6
+<7>[    0.275657] [drm:intel_device_info_runtime_init] has slice power gating: n
+<7>[    0.275665] [drm:intel_device_info_runtime_init] has subslice power gating: y
+<7>[    0.275672] [drm:intel_device_info_runtime_init] has EU power gating: y
+<7>[    0.275681] [drm:i915_driver_load] ppgtt mode: 1
+<7>[    0.275687] [drm:i915_driver_load] use GPU semaphores? no
+<7>[    0.275694] [drm:i915_driver_load] preemption enabled? no
+<6>[    0.275795] [drm] Memory usable by graphics device = 4096M
+<7>[    0.275806] [drm:i915_ggtt_probe_hw] GMADR size = 256M
+<7>[    0.275813] [drm:i915_ggtt_probe_hw] GTT stolen size = 64M
+<6>[    0.275829] [drm] iGVT-g active, disabling use of stolen memory
+<7>[    0.276034] [drm:sanitize_rc6_option] BIOS enabled RC states: HW_CTRL off HW_RC6 off SW_TARGET_STATE 0
+<7>[    0.276086] [drm:sanitize_rc6_option] RC6 Base location not set properly.
+<7>[    0.276139] [drm:sanitize_rc6_option] RC6 Base address not as expected.
+<7>[    0.276483] [drm:sanitize_rc6_option] GFX pause not setup properly.
+<7>[    0.276528] [drm:sanitize_rc6_option] GPM control not setup properly.
+<6>[    0.276532] [drm] RC6 disabled by BIOS
+<7>[    0.276709] [drm:intel_opregion_setup] graphic opregion physical addr: 0x0
+<7>[    0.276717] [drm:intel_opregion_setup] ACPI OpRegion not supported!
+<6>[    0.282385] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+<6>[    0.282391] [drm] Driver supports precise vblank timestamp query.
+<7>[    0.282401] [drm:intel_bios_init] Set default to SSC at 100000 kHz
+<6>[    0.282411] i915 0000:00:02.0: BAR 6: can't assign [??? 0x00000000 flags 0x20000000] (bogus alignment)
+<6>[    0.282416] [drm] failed to find VBIOS tables
+<7>[    0.282502] [drm:intel_power_well_enable] enabling power well 1
+<7>[    0.282668] [drm:skl_set_power_well] Enabling power well 1
+<7>[    0.282778] [drm:intel_update_cdclk] Current CD clock rate: 19200 kHz, VCO: 0 kHz, ref: 19200 kHz
+<7>[    0.282787] [drm:bxt_init_cdclk] Sanitizing cdclk programmed by pre-os
+<7>[    0.282795] [drm:bxt_set_cdclk] Changing CDCLK to 144000 kHz (VCO 1152000 kHz)
+<7>[    0.283545] [drm:intel_update_cdclk] Current CD clock rate: 144000 kHz, VCO: 1152000 kHz, ref: 19200 kHz
+<7>[    0.283691] [drm:intel_power_well_enable] enabling always-on
+<7>[    0.283698] [drm:intel_power_well_enable] enabling DC off
+<7>[    0.283834] [drm:intel_power_well_enable] enabling power well 2
+<7>[    0.283930] [drm:skl_set_power_well] Enabling power well 2
+<6>[    0.284036] vgaarb: device changed decodes: PCI:0000:00:02.0,olddecodes=io+mem,decodes=io+mem:owns=io+mem
+<7>[    0.284235] [drm:intel_power_well_enable] enabling dpio-common-a
+<7>[    0.284655] [drm:_bxt_ddi_phy_init] DDI PHY 1 already enabled, won't reprogram it
+<7>[    0.284663] [drm:intel_power_well_enable] enabling dpio-common-bc
+<4>[    0.285241] i2c_dw_init: Warning, overwrite fast-mode settings Fast-mode HCNT:LCNT = 800:1720  2
+<7>[    0.285478] [drm:_bxt_ddi_phy_init] DDI PHY 0 already enabled, won't reprogram it
+<7>[    0.286994] [drm:_bxt_ddi_phy_init] DDI PHY 1 already enabled, won't reprogram it
+<7>[    0.287927] [drm:_bxt_ddi_phy_init] DDI PHY 0 already enabled, won't reprogram it
+<7>[    0.290413] [drm:__bxt_hpd_detection_setup] Invert bit setting: hp_ctl:10001010 hp_port:38
+<7>[    0.293232] [drm:intel_fbc_init] Sanitized enable_fbc value: 1
+<7>[    0.293801] [drm:intel_print_wm_latency] Gen9 Plane WM0 latency 2 (2.0 usec)
+<3>[    0.293810] [drm:intel_print_wm_latency] *ERROR* Gen9 Plane WM1 latency not provided
+<3>[    0.293817] [drm:intel_print_wm_latency] *ERROR* Gen9 Plane WM2 latency not provided
+<3>[    0.293824] [drm:intel_print_wm_latency] *ERROR* Gen9 Plane WM3 latency not provided
+<3>[    0.293831] [drm:intel_print_wm_latency] *ERROR* Gen9 Plane WM4 latency not provided
+<3>[    0.293837] [drm:intel_print_wm_latency] *ERROR* Gen9 Plane WM5 latency not provided
+<3>[    0.293844] [drm:intel_print_wm_latency] *ERROR* Gen9 Plane WM6 latency not provided
+<3>[    0.293851] [drm:intel_print_wm_latency] *ERROR* Gen9 Plane WM7 latency not provided
+<7>[    0.293859] [drm:intel_modeset_init] 3 display pipes available.
+<6>[    0.293864] [drm] avail_planes_per_pipe = 0x3 
+<6>[    0.293867] [drm] domain_plane_owners = 0x0 
+<6>[    0.293870] [drm] for pipe 0 plane_mask = 3 
+<6>[    0.293873] [drm] for pipe 1 plane_mask = 0 
+<6>[    0.293876] [drm] for pipe 2 plane_mask = 0 
+<6>[    0.293886] [drm]  plane 0 created for pipe 0
+<6>[    0.293891] [drm]  plane 1 created for pipe 0
+<7>[    0.294014] [drm:intel_update_cdclk] Current CD clock rate: 144000 kHz, VCO: 1152000 kHz, ref: 19200 kHz
+<7>[    0.294025] [drm:intel_update_max_cdclk] Max CD clock rate: 624000 kHz
+<7>[    0.294032] [drm:intel_update_max_cdclk] Max dotclock rate: 624000 kHz
+<7>[    0.294479] [drm:intel_ddi_init] VBT says port A is not DVI/HDMI/DP compatible, respect it
+<7>[    0.294561] [drm:intel_hdmi_init_connector] Adding HDMI connector on port B
+<6>[    0.294588] [drm] forcing HDMI-A-1 connector ON
+<7>[    0.294598] [drm:drm_connector_init] cmdline mode for connector HDMI-A-1 0x0@60Hz
+<7>[    0.294605] [drm:intel_hdmi_init_connector] Using DDC pin 0x1 for port B (platform default)
+<7>[    0.294710] [drm:intel_hdmi_init_connector] Adding HDMI connector on port C
+<6>[    0.294721] [drm] forcing HDMI-A-2 connector OFF
+<7>[    0.294728] [drm:drm_connector_init] cmdline mode for connector HDMI-A-2 0x0@60Hz
+<7>[    0.294735] [drm:intel_hdmi_init_connector] Using DDC pin 0x2 for port C (platform default)
+<7>[    0.294743] [drm:intel_dsi_init] 
+<7>[    0.294891] [drm:intel_modeset_setup_hw_state] [CRTC:32:pipe A] hw state readout: disabled
+<7>[    0.294935] [drm:intel_modeset_setup_hw_state] PORT PLL A hw state readout: crtc_mask 0x00000000, on 0
+<7>[    0.294977] [drm:intel_modeset_setup_hw_state] PORT PLL B hw state readout: crtc_mask 0x00000000, on 0
+<7>[    0.295029] [drm:intel_modeset_setup_hw_state] PORT PLL C hw state readout: crtc_mask 0x00000000, on 0
+<7>[    0.295072] [drm:intel_modeset_setup_hw_state] [ENCODER:33:DDI B] hw state readout: disabled, pipe A
+<7>[    0.295113] [drm:intel_modeset_setup_hw_state] [ENCODER:38:DDI C] hw state readout: disabled, pipe A
+<7>[    0.295155] [drm:intel_modeset_setup_hw_state] [CONNECTOR:34:HDMI-A-1] hw state readout: disabled
+<7>[    0.295199] [drm:intel_modeset_setup_hw_state] [CONNECTOR:39:HDMI-A-2] hw state readout: disabled
+<7>[    0.295266] [drm:intel_dump_pipe_config] [CRTC:32:pipe A][setup_hw_state]
+<7>[    0.295274] [drm:intel_dump_pipe_config] cpu_transcoder: A, pipe bpp: 0, dithering: 0
+<7>[    0.295280] [drm:intel_dump_pipe_config] audio: 0, infoframes: 0
+<7>[    0.295286] [drm:intel_dump_pipe_config] requested mode:
+<7>[    0.295296] [drm:drm_mode_debug_printmodeline] Modeline 0:"" 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+<7>[    0.295302] [drm:intel_dump_pipe_config] adjusted mode:
+<7>[    0.295312] [drm:drm_mode_debug_printmodeline] Modeline 0:"" 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+<7>[    0.295321] [drm:intel_dump_pipe_config] crtc timings: 0 0 0 0 0 0 0 0 0, type: 0x0 flags: 0x0
+<7>[    0.295327] [drm:intel_dump_pipe_config] port clock: 0, pipe src size: 0x0, pixel rate 0
+<7>[    0.295335] [drm:intel_dump_pipe_config] num_scalers: 2, scaler_users: 0x0, scaler_id: 0
+<7>[    0.295341] [drm:intel_dump_pipe_config] pch pfit: pos: 0x00000000, size: 0x00000000, disabled
+<7>[    0.295348] [drm:intel_dump_pipe_config] ips: 0, double wide: 0
+<7>[    0.295358] [drm:bxt_dump_hw_state] dpll_hw_state: ebb0: 0x0, ebb4: 0x0,pll0: 0x0, pll1: 0x0, pll2: 0x0, pll3: 0x0, pll6: 0x0, pll8: 0x0, pll9: 0x0, pll10: 0x0, pcsdw12: 0x0
+<7>[    0.295365] [drm:intel_dump_pipe_config] planes on this crtc
+<7>[    0.295372] [drm:intel_dump_pipe_config] [PLANE:30:plane 1A] disabled, scaler_id = -1
+<7>[    0.295378] [drm:intel_dump_pipe_config] [PLANE:31:plane 2A] disabled, scaler_id = -1
+<7>[    0.296149] [drm:intel_power_well_disable] disabling dpio-common-bc
+<7>[    0.296275] [drm:intel_power_well_disable] disabling dpio-common-a
+<7>[    0.296420] [drm:intel_power_well_disable] disabling power well 2
+<7>[    0.296832] [drm:skl_set_power_well] Disabling power well 2
+<7>[    0.297022] [drm:intel_power_well_disable] disabling DC off
+<7>[    0.297029] [drm:intel_power_well_disable] disabling always-on
+<6>[    0.297498] [drm] VGT ballooning configuration:
+<6>[    0.297503] [drm] Mappable graphic memory: base 0x200000 size 260096KiB
+<6>[    0.297507] [drm] Unmappable graphic memory: base 0x10000000 size 3389440KiB
+<6>[    0.297511] [drm] balloon space: range [ 0xdee00000 - 0xfffff000 ] 542716 KiB.
+<6>[    0.297517] [drm] balloon space: range [ 0x0 - 0x200000 ] 2048 KiB.
+<6>[    0.297521] [drm] VGT balloon successfully
+<7>[    0.297532] [drm:i915_gem_init_ggtt] clearing unused GTT space: [201000, dee00000]
+<7>[    0.307636] [drm:i915_gem_context_init] LR context support initialized
+<7>[    0.307763] [drm:intel_engine_create_scratch] render ring pipe control offset: 0xdedff000
+<7>[    0.309172] [drm:gen8_init_common_ring] Execlists enabled for render ring
+<7>[    0.309724] [drm:gen8_init_common_ring] Execlists enabled for blitter ring
+<7>[    0.309842] [drm:gen8_init_common_ring] Execlists enabled for bsd ring
+<7>[    0.309985] [drm:gen8_init_common_ring] Execlists enabled for video enhancement ring
+<6>[    0.310665] [drm] RC6 disabled, disabling runtime PM support
+<7>[    0.310823] [drm:intel_update_cdclk] Current CD clock rate: 144000 kHz, VCO: 1152000 kHz, ref: 19200 kHz
+<7>[    0.311336] [drm:__bxt_hpd_detection_setup] Invert bit setting: hp_ctl:18001818 hp_port:30
+<7>[    0.311495] [drm:intel_hdmi_detect] [CONNECTOR:34:HDMI-A-1]
+<7>[    0.311505] [drm:intel_power_well_enable] enabling always-on
+<7>[    0.311512] [drm:intel_power_well_enable] enabling DC off
+<7>[    0.311670] [drm:intel_power_well_enable] enabling power well 2
+<6>[    0.311769] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+<7>[    0.311782] [drm:skl_set_power_well] Enabling power well 2
+<6>[    0.311905] clocksource: Switched to clocksource acpi_pm
+<7>[    0.312666] pci 0000:00:13.0: bridge window [mem 0x00100000-0x000fffff pref] to [bus 01] add_size 200000 add_align 100000
+<4>[    0.312678] i915 0000:00:02.0: BAR 6: [??? 0x00000000 flags 0x20000000] has bogus alignment
+<7>[    0.312690] pci 0000:00:13.0: res[9]=[mem 0x00100000-0x000fffff pref] res_to_dev_res add_size 200000 min_align 100000
+<7>[    0.312696] pci 0000:00:13.0: res[9]=[mem 0x00100000-0x002fffff pref] res_to_dev_res add_size 200000 min_align 100000
+<6>[    0.312708] pci 0000:00:13.0: BAR 9: assigned [mem 0x90100000-0x902fffff pref]
+<6>[    0.312715] pci 0000:00:13.0: PCI bridge to [bus 01]
+<6>[    0.312800] pci 0000:00:13.0:   bridge window [io  0x4000-0x4fff]
+<6>[    0.313163] pci 0000:00:13.0:   bridge window [mem 0xf1a00000-0xf1afffff]
+<6>[    0.313316] pci 0000:00:13.0:   bridge window [mem 0x90100000-0x902fffff pref]
+<7>[    0.313629] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+<7>[    0.313636] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+<7>[    0.313641] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+<7>[    0.313646] pci_bus 0000:00: resource 7 [mem 0x80000000-0xfebfffff window]
+<7>[    0.313652] pci_bus 0000:01: resource 0 [io  0x4000-0x4fff]
+<7>[    0.313657] pci_bus 0000:01: resource 1 [mem 0xf1a00000-0xf1afffff]
+<7>[    0.313662] pci_bus 0000:01: resource 2 [mem 0x90100000-0x902fffff pref]
+<7>[    0.313788] [drm:intel_power_well_disable] disabling power well 2
+<6>[    0.314394] NET: Registered protocol family 2
+<7>[    0.314463] [drm:skl_set_power_well] Disabling power well 2
+<7>[    0.314600] [drm:intel_power_well_disable] disabling DC off
+<7>[    0.314608] [drm:intel_power_well_disable] disabling always-on
+<7>[    0.314618] [drm:drm_helper_hpd_irq_event] [CONNECTOR:34:HDMI-A-1] status updated from unknown to connected
+<7>[    0.314628] [drm:intel_hdmi_detect] [CONNECTOR:39:HDMI-A-2]
+<7>[    0.314634] [drm:intel_power_well_enable] enabling always-on
+<7>[    0.314640] [drm:intel_power_well_enable] enabling DC off
+<6>[    0.314647] TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+<6>[    0.314755] TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+<7>[    0.314776] [drm:intel_power_well_enable] enabling power well 2
+<7>[    0.314875] [drm:skl_set_power_well] Enabling power well 2
+<6>[    0.315148] TCP: Hash tables configured (established 32768 bind 32768)
+<6>[    0.315217] UDP hash table entries: 2048 (order: 4, 65536 bytes)
+<6>[    0.315253] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+<7>[    0.315387] [drm:drm_dp_dual_mode_detect] DP dual mode HDMI ID:  (err -110)
+<7>[    0.315395] [drm:intel_power_well_disable] disabling power well 2
+<6>[    0.315730] NET: Registered protocol family 1
+<6>[    0.315759] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+<7>[    0.315773] [drm:skl_set_power_well] Disabling power well 2
+<7>[    0.316105] [drm:intel_power_well_disable] disabling DC off
+<7>[    0.316112] [drm:intel_power_well_disable] disabling always-on
+<7>[    0.316117] i915 0000:00:02.0: Video device with shadowed ROM
+<7>[    0.316121] [drm:drm_helper_hpd_irq_event] [CONNECTOR:39:HDMI-A-2] status updated from unknown to disconnected
+<6>[    0.317211] [drm] Initialized i915 1.6.0 20170123 for 0000:00:02.0 on minor 0
+<6>[    0.317625] [drm] Initialized i915 1.6.0 20170123 for 0000:00:02.0 on minor 0
+<7>[    0.317903] PCI: CLS 128 bytes, default 64
+<6>[    0.318092] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+<6>[    0.318099] software IO TLB [mem 0x7bff0000-0x7fff0000] (64MB) mapped at [ffff88007bff0000-ffff88007ffeffff]
+<6>[    0.318786] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x363e8c91135, max_idle_ns: 881590568389 ns
+<6>[    0.318897] clocksource: Switched to clocksource tsc
+<6>[    0.319655] Scanning for low memory corruption every 60 seconds
+<6>[    0.324018] audit: initializing netlink subsys (disabled)
+<5>[    0.324062] audit: type=2000 audit(1321009872.316:1): initialized
+<5>[    0.324667] Loading compiled-in X.509 certificates
+<5>[    0.325895] Loaded X.509 cert 'Build time autogenerated kernel key: 4d62d0ec8f1a093f7ecb10fb9338f9900749cbfe'
+<6>[    0.326308] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+<5>[    0.326812] VFS: Disk quotas dquot_6.6.0
+<6>[    0.326875] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+<6>[    0.327531] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+<6>[    0.328508] ntfs: driver 2.1.32 [Flags: R/O].
+<6>[    0.328597] fuse init (API version 7.23)
+<5>[    0.328938] Key type big_key registered
+<7>[    0.328946] SELinux:  Registering netfilter hooks
+<6>[    0.335520] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+<6>[    0.335534] io scheduler noop registered
+<6>[    0.335539] io scheduler deadline registered
+<6>[    0.335625] io scheduler cfq registered (default)
+<6>[    0.337338] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+<6>[    0.337443] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+<6>[    0.343414] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+<6>[    0.355191] Non-volatile memory driver v1.3
+<6>[    0.355204] Linux agpgart interface v0.103
+<6>[    0.375435] brd: module loaded
+<6>[    0.382058] loop: module loaded
+<6>[    0.387906]  vda: vda1 vda2 vda3 vda4 vda5 vda6 vda7 vda8 vda9 vda10 vda11 vda12 vda13 vda14 vda15 vda16 vda17
+<6>[    0.391582] zram: Added device: zram0
+<4>[    0.391722] memprobe_e820: [mem 0x0000000000000000-0x0000000000000fff] reserved
+<4>[    0.391731] memprobe_e820: [mem 0x0000000000001000-0x000000000009efff] usable
+<4>[    0.391739] memprobe_e820: [mem 0x000000000009f000-0x000000000009ffff] reserved
+<4>[    0.391745] memprobe_e820: [mem 0x00000000000e8000-0x00000000000fffff] reserved
+<4>[    0.391751] memprobe_e820: [mem 0x0000000000100000-0x000000004fffffff] usable
+<4>[    0.391758] memprobe_e820: [mem 0x0000000050000000-0x00000000503fffff] reserved
+<4>[    0.391765] memprobe_e820: [mem 0x0000000050400000-0x000000007ffeffff] usable
+<4>[    0.391772] memprobe_e820: [mem 0x000000007fff0000-0x000000007fffffff] ACPI data
+<4>[    0.391778] memprobe_e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+<4>[    0.391785] memprobe_e820: [mem 0x0000000100000000-0x0000000166ffffff] usable
+<4>[    0.391792] memprobe_e820_saved: [mem 0x0000000000000000-0x000000000009efff] usable
+<4>[    0.391799] memprobe_e820_saved: [mem 0x000000000009f000-0x000000000009ffff] reserved
+<4>[    0.391805] memprobe_e820_saved: [mem 0x00000000000e8000-0x00000000000fffff] reserved
+<4>[    0.391811] memprobe_e820_saved: [mem 0x0000000000100000-0x000000007ffeffff] usable
+<4>[    0.391818] memprobe_e820_saved: [mem 0x000000007fff0000-0x000000007fffffff] ACPI data
+<4>[    0.391825] memprobe_e820_saved: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+<4>[    0.391831] memprobe_e820_saved: [mem 0x0000000100000000-0x0000000166ffffff] usable
+<6>[    0.391838] <find_e820_range> found e820_range with addr: 0, index: 0.
+<6>[    0.391843] <find_e820_range> found e820_range with addr: 9f000, index: 2.
+<6>[    0.391847] <find_e820_range> found e820_range with addr: e8000, index: 3.
+<6>[    0.391851] <find_e820_range> found e820_range with addr: 100000, index: 4.
+<6>[    0.391856] <find_e820_range> found e820_range with addr: 7fff0000, index: 7.
+<6>[    0.391860] <find_e820_range> found e820_range with addr: fffc0000, index: 8.
+<6>[    0.391864] <find_e820_range> found e820_range with addr: 100000000, index: 9.
+<6>[    0.393898] idma64 idma64.0: Found Intel integrated DMA 64-bit
+<6>[    0.394310] dw-apb-uart.0: ttyS0 at MMIO 0xf1e10000 (irq = 112, base_baud = 6250000) is a 16550A
+<6>[    0.396004] dw-apb-uart.1: ttyS1 at MMIO 0xf1e12000 (irq = 115, base_baud = 6250000) is a 16550A
+<6>[    0.398001] idma64 idma64.2: Found Intel integrated DMA 64-bit
+<6>[    0.399816] idma64 idma64.3: Found Intel integrated DMA 64-bit
+<6>[    0.401989] idma64 idma64.4: Found Intel integrated DMA 64-bit
+<6>[    0.403559] nxp7120_dev_init
+<6>[    0.403589] nxp7120_probe
+<6>[    0.403594] nxp7120_probe: request irq_gpio 451
+<6>[    0.405281] nxp7120_probe : requesting IRQ 137
+<6>[    0.407488] tun: Universal TUN/TAP device driver, 1.6
+<6>[    0.407498] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+<6>[    0.407648] CAN device driver interface
+<3>[    0.419391] mcp251x can_probe successful
+<6>[    0.419528] PPP generic driver version 2.4.2
+<6>[    0.419826] PPP BSD Compression module registered
+<6>[    0.419834] PPP Deflate Compression module registered
+<6>[    0.419851] PPP MPPE Compression module registered
+<6>[    0.419857] NET: Registered protocol family 24
+<6>[    0.420053] usbcore: registered new interface driver ipheth
+<6>[    0.420645] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[    0.420656] ehci-pci: EHCI PCI platform driver
+<6>[    0.420816] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+<6>[    0.420827] uhci_hcd: USB Universal Host Controller Interface driver
+<6>[    0.421527] usbcore: registered new interface driver cdc_acm
+<6>[    0.421532] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+<6>[    0.421673] usbcore: registered new interface driver usb-storage
+<6>[    0.421808] usbcore: registered new interface driver ums-realtek
+<6>[    0.422098] usbcore: registered new interface driver usbserial
+<6>[    0.422226] usbcore: registered new interface driver usbserial_generic
+<6>[    0.422354] usbserial: USB Serial support registered for generic
+<6>[    0.422495] usbcore: registered new interface driver usb_ehset_test
+<6>[    0.422793] usbcore: registered new interface driver dabridge
+<6>[    0.423124] mousedev: PS/2 mouse device common for all mice
+<6>[    0.425026] rtc_cmos 00:00: rtc core: registered rtc_cmos as rtc0
+<6>[    0.425407] rtc_cmos 00:00: alarms up to one day, 114 bytes nvram
+<6>[    0.425650] i2c /dev entries driver
+<3>[    0.427757] camera-iris camera-iris: Unable to request PWM for camera iris!
+<6>[    0.428017] usbcore: registered new interface driver uvcvideo
+<6>[    0.428022] USB Video Class driver (1.1.1)
+<6>[    0.431722] iTCO_wdt: Intel TCO WatchDog Timer Driver v1.11
+<6>[    0.431984] device-mapper: uevent: version 1.0.3
+<6>[    0.432215] device-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com
+<6>[    0.432546] sdhci: Secure Digital Host Controller Interface driver
+<6>[    0.432551] sdhci: Copyright(c) Pierre Ossman
+<6>[    0.433199] dcdbas dcdbas: Dell Systems Management Base Driver (version 5.6.0-3.2)
+<6>[    0.433430] hidraw: raw HID events driver (C) Jiri Kosina
+<6>[    0.434900] usbcore: registered new interface driver usbhid
+<6>[    0.434906] usbhid: USB HID core driver
+<6>[    0.435107] ashmem: initialized
+<6>[    0.435874] ghs_comms: Found 8 channels.
+<6>[    0.442768] intel_rapl: Found RAPL domain package
+<6>[    0.442803] intel_rapl: Found RAPL domain core
+<6>[    0.442830] intel_rapl: Found RAPL domain uncore
+<6>[    0.442857] intel_rapl: Found RAPL domain dram
+<6>[    0.447293] usbcore: registered new interface driver snd-usb-audio
+<6>[    0.448314] netem: version 1.3
+<6>[    0.448342] u32 classifier
+<6>[    0.448346]     Performance counters on
+<6>[    0.448349]     Actions configured
+<6>[    0.448361] Netfilter messages via NETLINK v0.30.
+<6>[    0.448383] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+<6>[    0.448520] ctnetlink v0.93: registering with nfnetlink.
+<6>[    0.449436] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    0.449533] Initializing XFRM netlink socket
+<6>[    0.449796] NET: Registered protocol family 10
+<6>[    0.450382] ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    0.451420] sit: IPv6 over IPv4 tunneling driver
+<6>[    0.451968] NET: Registered protocol family 17
+<6>[    0.451986] NET: Registered protocol family 15
+<6>[    0.452010] bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+<6>[    0.452018] can: controller area network core (rev 20120528 abi 9)
+<6>[    0.452044] NET: Registered protocol family 29
+<6>[    0.452060] can: raw protocol (rev 20120528)
+<6>[    0.452066] can: broadcast manager protocol (rev 20120528 t)
+<6>[    0.452074] can: netlink gateway (rev 20130117) max_hops=1
+<6>[    0.452163] l2tp_core: L2TP core driver, V2.0
+<6>[    0.452174] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+<6>[    0.452181] 8021q: 802.1Q VLAN Support v1.8
+<5>[    0.452207] Key type dns_resolver registered
+<3>[    0.452217] mce: Unable to init device /dev/mcelog (rc: -5)
+<6>[    0.452659] SSE version of gcm_enc/dec engaged.
+<6>[    0.454773] registered taskstats version 1
+<5>[    0.455843] Key type encrypted registered
+<7>[    0.455854] gm_signature: Entering gm_signature_init
+<7>[    0.455858] gm_signature: proto-key not yet set, staying in data_locked mode.
+<7>[    0.455862] gm_signature: Entering gm_nl_init
+<6>[    0.460305]   Magic number: 3:638:175
+<6>[    0.460317] misc network_throughput: hash matches
+<6>[    0.460787] console [netcon0] enabled
+<6>[    0.460793] netconsole: network logging started
+<3>[    0.460801] otg_wakelock_init: No USB transceiver found
+<3>[    0.461285] Now: 2011-11-11 11:11:12.500050999 UTC
+<6>[    0.461293] rtc_cmos 00:00: setting system clock to 2011-11-11 11:11:12 UTC (1321009872)
+<6>[    0.463112] ALSA device list:
+<6>[    0.463119]   No soundcards found.
+<6>[    0.695215] Freeing initrd memory: 18876K
+<6>[    0.697796] Freeing unused kernel memory: 1196K
+<6>[    0.697815] Write protecting the kernel read-only data: 18432k
+<6>[    0.699182] Freeing unused kernel memory: 1784K
+<6>[    0.701716] Freeing unused kernel memory: 624K
+<13>[    0.702713] init: init started!
+<7>[    0.706246] SELinux: 4096 avtab hash slots, 14551 rules.
+<6>[    0.706315] SELinux:  Android master kernel running Android M policy in compatibility mode.
+<7>[    0.711239] SELinux: 4096 avtab hash slots, 14551 rules.
+<7>[    0.711260] SELinux:  1 users, 2 roles, 1136 types, 0 bools, 1 sens, 1024 cats
+<7>[    0.711270] SELinux:  96 classes, 14551 rules
+<7>[    0.712731] SELinux:  Completing initialization.
+<7>[    0.712742] SELinux:  Setting up existing superblocks.
+<5>[    0.723239] audit: type=1403 audit(1321009872.760:2): policy loaded auid=4294967295 ses=4294967295
+<5>[    0.723451] audit: type=1404 audit(1321009872.760:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+<4>[    0.726740] 
+<4>[    0.726753] **********************************************************
+<4>[    0.726757] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+<4>[    0.726761] **                                                      **
+<4>[    0.726765] ** trace_printk() being used. Allocating extra memory.  **
+<4>[    0.726769] **                                                      **
+<4>[    0.726773] ** This means that this is a DEBUG kernel and it is     **
+<4>[    0.726777] ** unsafe for production use.                           **
+<4>[    0.726781] **                                                      **
+<4>[    0.726785] ** If you see this message and you are not debugging    **
+<4>[    0.726789] ** the kernel, report this immediately to your vendor!  **
+<4>[    0.726792] **                                                      **
+<4>[    0.726796] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+<4>[    0.726800] **********************************************************
+<13>[    0.728035] init: (Initializing SELinux enforcing took 0.03s.)
+<4>[    0.732408] Could not create tracefs 'ipu4_pg_kcmd' directory
+<4>[    0.732421] Could not create tracefs 'ipu4_perf_reg' directory
+<4>[    0.732429] Could not create tracefs 'ipu4_sof_seqid' directory
+<13>[    0.734474] init: init second stage started!
+<4>[    0.741508] Could not create tracefs 'ipu4_pg_kcmd' directory
+<4>[    0.741524] Could not create tracefs 'ipu4_perf_reg' directory
+<4>[    0.741531] Could not create tracefs 'ipu4_sof_seqid' directory
+<3>[    0.744737] intel_ipu4 isys ABI size of mismatch abi_output_pin_info
+<3>[    0.744748] intel_ipu4 isys ABI size of mismatch abi_stream_cfg
+<11>[    0.773308] init: waitpid failed: No child processes
+<11>[    0.773651] init: property_set("ro.debuggable", "0") failed
+<13>[    0.774012] init: (Loading properties from /default.prop took 0.00s.)
+<13>[    0.774543] init: (Parsing init.recovery.common.rc took 0.00s.)
+<13>[    0.774556] init: (Parsing /init.recovery.bxtp_abl.rc took 0.00s.)
+<13>[    0.774568] init: (Parsing /init.rc took 0.00s.)
+<13>[    0.774609] init: Starting service 'ueventd'...
+<13>[    0.774790] init: Starting service 'healthd'...
+<13>[    0.776574] ueventd: ueventd started!
+<5>[    0.776782] audit: type=1400 audit(1321009872.813:4): avc:  denied  { mknod } for  pid=1134 comm="healthd" capability=27  scontext=u:r:healthd:s0 tcontext=u:r:healthd:s0 tclass=capability permissive=0
+<5>[    0.776821] audit: type=1400 audit(1321009872.813:5): avc:  denied  { mknod } for  pid=1134 comm="healthd" capability=27  scontext=u:r:healthd:s0 tcontext=u:r:healthd:s0 tclass=capability permissive=0
+<6>[    0.978643] dwc3 dwc3.0.auto: dwc3_suspend_common
+<6>[    0.981773] xhci_hcd 0000:00:15.0: xHCI Host Controller
+<6>[    0.982008] xhci_hcd 0000:00:15.0: new USB bus registered, assigned bus number 1
+<6>[    0.983176] xhci_hcd 0000:00:15.0: hcc params 0x200077c1 hci version 0x100 quirks 0x01109810
+<6>[    0.983191] intel-cht-otg intel-cht-otg.0: No extcon device, OTG support stubbed
+<7>[    0.983270] xhci_hcd 0000:00:15.0: cache line size of 128 is not supported
+<6>[    0.983988] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+<6>[    0.983996] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>[    0.984001] usb usb1: Product: xHCI Host Controller
+<6>[    0.984007] usb usb1: Manufacturer: Linux 4.4.138-quilt-2e5dc0ac-ga39ea26104a3 xhci-hcd
+<6>[    0.984011] usb usb1: SerialNumber: 0000:00:15.0
+<6>[    0.984477] hub 1-0:1.0: USB hub found
+<6>[    0.984509] hub 1-0:1.0: 8 ports detected
+<6>[    0.984950] xhci_hcd 0000:00:15.0: xHCI Host Controller
+<6>[    0.985164] xhci_hcd 0000:00:15.0: new USB bus registered, assigned bus number 2
+<6>[    0.985254] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003
+<6>[    0.985260] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>[    0.985265] usb usb2: Product: xHCI Host Controller
+<6>[    0.985271] usb usb2: Manufacturer: Linux 4.4.138-quilt-2e5dc0ac-ga39ea26104a3 xhci-hcd
+<6>[    0.985275] usb usb2: SerialNumber: 0000:00:15.0
+<6>[    0.985682] hub 2-0:1.0: USB hub found
+<6>[    0.985709] hub 2-0:1.0: 7 ports detected
+<4>[    0.986141] ACPI: \: failed to evaluate _DSM (0x1001)
+<6>[    0.986675] intel-cht-otg intel-cht-otg.0: VBUS = 1
+<6>[    0.986686] intel-cht-otg intel-cht-otg.0: USB_EVENT_VBUS vbus valid
+<6>[    0.986692] dwc3 dwc3.0.auto: DWC3 OTG Notify USB_EVENT_VBUS
+<6>[    0.986715] dwc3 dwc3.0.auto: dwc3_resume_common
+<13>[    0.990699] init: Waiting for /dev/.coldboot_done...
+<13>[    1.020831] ueventd: Coldboot took 0.24s.
+<13>[    1.021089] init: Waiting for /dev/.coldboot_done took 0.03s.
+<11>[    1.021122] init: /dev/hw_random not found
+<13>[    1.021276] init: console : /dev/console have_console 1
+<6>[    1.021963] intel-cht-otg intel-cht-otg.0: h: set HOST mode
+<6>[    1.021973] intel-cht-otg intel-cht-otg.0: VBUS = 0
+<6>[    1.021979] intel-cht-otg intel-cht-otg.0: USB_EVENT_NONE cable disconnected
+<6>[    1.021985] dwc3 dwc3.0.auto: DWC3 OTG Notify USB_EVENT_NONE
+<6>[    1.022012] intel-cht-otg intel-cht-otg.0: ID = 0
+<6>[    1.022017] intel-cht-otg intel-cht-otg.0: USB_EVENT_ID id ground
+<6>[    1.137017] ti949 7-000c: SoC bootup temperature 33 celcius
+<4>[    1.149002] ti949 7-000c: Failed to create debugfs directory
+<4>[    1.150692] ti949 7-000c: Failed to create debugfs directory
+<3>[    1.152774] ti949 7-000c: ti949_config_intb_irq: IRQ GPIO 449 is valid.
+<3>[    1.153060] ti949 7-000c: ti949_config_intb_irq: request_threaded_irq success: rval: 0
+<6>[    1.156115] Faceplate driver V2
+<6>[    1.157064] input: Faceplate Controller as /devices/pci0000:00/0000:00:17.3/i2c-7/7-0012/input/input0
+<4>[    1.164902] bus_num:1, mode:1, chip_select:1, max_speed_hz:50000000 =>
+<11>[    1.166869] init: /dev/hw_random not found
+<13>[    1.179802] init: Starting service 'thermal_lite'...
+<13>[    1.180078] init: (Loading properties from /system/build.prop took 0.00s.)
+<13>[    1.180101] init: (Loading properties from /vendor/build.prop took 0.00s.)
+<13>[    1.180122] init: (Loading properties from /factory/factory.prop took 0.00s.)
+<13>[    1.182122] init: Starting service 'recovery'...
+<13>[    1.182320] init: Starting service 'ipc_server'...
+<13>[    1.182495] init: Starting service 'watchdogd'...
+<13>[    1.182735] init: write_file: Unable to open '/sys/devices/pci0000:00/0000:00:0f.0/power/control': No such file or directory
+<13>[    1.186619] watchdogd: watchdogd started (interval 10, margin 30)!
+<11>[    1.186651] watchdogd: watchdogd: Failed to open /dev/watchdog: No such file or directory
+<13>[    1.187796] init: Service 'watchdogd' (pid 1514) exited with status 1
+<6>[    1.188229] file system registered
+<13>[    1.189019] init: Starting service 'recovery_panel'...
+<13>[    1.189254] init: Starting service 'vold'...
+<13>[    1.191861] init: write_file: Unable to open '/sys/class/android_usb/android0/enable': Permission denied
+<13>[    1.191899] init: Starting service 'adbd'...
+<13>[    1.192244] init: Starting service 'console'...
+<13>[    1.192410] init: Starting service 'logd'...
+<6>[    1.195190] read descriptors
+<6>[    1.195208] read strings
+<38>[    1.196010] logd.auditd: start
+<6>[    1.196263] intel-cht-otg intel-cht-otg.0: No extcon device, OTG support stubbed
+<6>[    1.201109] EXT4-fs (vda12): recovery complete
+<6>[    1.202432] EXT4-fs (vda12): mounted filesystem with ordered data mode. Opts: errors=panic
+<6>[    1.206723] EXT4-fs (vda15): recovery complete
+<6>[    1.206739] EXT4-fs (vda15): mounted filesystem with ordered data mode. Opts: errors=panic
+<3>[    1.209713] Now: 2019-04-18 19:20:32.000053234 UTC
+<7>[    1.217996] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1]
+<7>[    1.218014] [drm:intel_hdmi_force] [CONNECTOR:34:HDMI-A-1]
+<6>[    1.218023] [drm] Got built-in EDID base block and 0 extensions from "edid/harman0768p.bin" for connector "HDMI-A-1"
+<7>[    1.218049] [drm:drm_edid_to_eld] ELD: no CEA Extension found
+<7>[    1.218060] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1] probed modes :
+<7>[    1.218073] [drm:drm_mode_debug_printmodeline] Modeline 41:"1280x768" 60 69050 1280 1451 1459 1468 768 779 781 784 0x48 0xa
+<7>[    1.218084] [drm:drm_mode_debug_printmodeline] Modeline 42:"1280x800" 60 83500 1280 1352 1480 1680 800 803 809 831 0x40 0x6
+<7>[    1.218102] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1]
+<7>[    1.218111] [drm:intel_hdmi_force] [CONNECTOR:34:HDMI-A-1]
+<6>[    1.218117] [drm] Got built-in EDID base block and 0 extensions from "edid/harman0768p.bin" for connector "HDMI-A-1"
+<7>[    1.218132] [drm:drm_edid_to_eld] ELD: no CEA Extension found
+<7>[    1.218141] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1] probed modes :
+<7>[    1.218152] [drm:drm_mode_debug_printmodeline] Modeline 41:"1280x768" 60 69050 1280 1451 1459 1468 768 779 781 784 0x48 0xa
+<7>[    1.218164] [drm:drm_mode_debug_printmodeline] Modeline 42:"1280x800" 60 83500 1280 1352 1480 1680 800 803 809 831 0x40 0x6
+<7>[    1.218184] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1]
+<7>[    1.218192] [drm:intel_hdmi_force] [CONNECTOR:34:HDMI-A-1]
+<6>[    1.218198] [drm] Got built-in EDID base block and 0 extensions from "edid/harman0768p.bin" for connector "HDMI-A-1"
+<7>[    1.218213] [drm:drm_edid_to_eld] ELD: no CEA Extension found
+<7>[    1.218221] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1] probed modes :
+<7>[    1.218232] [drm:drm_mode_debug_printmodeline] Modeline 41:"1280x768" 60 69050 1280 1451 1459 1468 768 779 781 784 0x48 0xa
+<7>[    1.218244] [drm:drm_mode_debug_printmodeline] Modeline 42:"1280x800" 60 83500 1280 1352 1480 1680 800 803 809 831 0x40 0x6
+<7>[    1.218263] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1]
+<7>[    1.218271] [drm:intel_hdmi_force] [CONNECTOR:34:HDMI-A-1]
+<6>[    1.218277] [drm] Got built-in EDID base block and 0 extensions from "edid/harman0768p.bin" for connector "HDMI-A-1"
+<7>[    1.218291] [drm:drm_edid_to_eld] ELD: no CEA Extension found
+<7>[    1.218300] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1] probed modes :
+<7>[    1.218311] [drm:drm_mode_debug_printmodeline] Modeline 41:"1280x768" 60 69050 1280 1451 1459 1468 768 779 781 784 0x48 0xa
+<7>[    1.218322] [drm:drm_mode_debug_printmodeline] Modeline 42:"1280x800" 60 83500 1280 1352 1480 1680 800 803 809 831 0x40 0x6
+<7>[    1.218341] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1]
+<7>[    1.218350] [drm:intel_hdmi_force] [CONNECTOR:34:HDMI-A-1]
+<6>[    1.218356] [drm] Got built-in EDID base block and 0 extensions from "edid/harman0768p.bin" for connector "HDMI-A-1"
+<7>[    1.218370] [drm:drm_edid_to_eld] ELD: no CEA Extension found
+<7>[    1.218379] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1] probed modes :
+<7>[    1.218389] [drm:drm_mode_debug_printmodeline] Modeline 41:"1280x768" 60 69050 1280 1451 1459 1468 768 779 781 784 0x48 0xa
+<7>[    1.218400] [drm:drm_mode_debug_printmodeline] Modeline 42:"1280x800" 60 83500 1280 1352 1480 1680 800 803 809 831 0x40 0x6
+<7>[    1.218436] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1]
+<7>[    1.218444] [drm:intel_hdmi_force] [CONNECTOR:34:HDMI-A-1]
+<6>[    1.218450] [drm] Got built-in EDID base block and 0 extensions from "edid/harman0768p.bin" for connector "HDMI-A-1"
+<7>[    1.218465] [drm:drm_edid_to_eld] ELD: no CEA Extension found
+<7>[    1.218473] [drm:drm_helper_probe_single_connector_modes] [CONNECTOR:34:HDMI-A-1] probed modes :
+<7>[    1.218484] [drm:drm_mode_debug_printmodeline] Modeline 41:"1280x768" 60 69050 1280 1451 1459 1468 768 779 781 784 0x48 0xa
+<7>[    1.218495] [drm:drm_mode_debug_printmodeline] Modeline 42:"1280x800" 60 83500 1280 1352 1480 1680 800 803 809 831 0x40 0x6
+<7>[    1.218591] [drm:drm_mode_addfb2] [FB:40]
+<7>[    1.218634] [drm:drm_mode_addfb2] [FB:44]
+<7>[    1.218652] [drm:drm_mode_setcrtc] [CRTC:32:pipe A]
+<7>[    1.218662] [drm:drm_mode_setcrtc] [CONNECTOR:34:HDMI-A-1]
+<7>[    1.218689] [drm:intel_atomic_check] [CONNECTOR:34:HDMI-A-1] checking for sink bpp constrains
+<7>[    1.218697] [drm:intel_atomic_check] clamping display bpp (was 36) to default limit of 24
+<7>[    1.218706] [drm:intel_hdmi_compute_config] picking bpc to 8 for HDMI output
+<7>[    1.218713] [drm:intel_hdmi_compute_config] forcing pipe bpc to 24 for HDMI
+<7>[    1.218721] [drm:intel_atomic_check] hw max bpp: 36, pipe bpp: 24, dithering: 0
+<7>[    1.218733] [drm:pipe_config_err] mismatch in lane_count (expected 0, found 4)
+<7>[    1.218741] [drm:pipe_config_err] mismatch in lane_lat_optim_mask (expected 0x00000000, found 0x0000000d)
+<7>[    1.218750] [drm:pipe_config_err] mismatch in output_types (expected 0x00000000, found 0x00000040)
+<7>[    1.218758] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_hdisplay (expected 0, found 1280)
+<7>[    1.218766] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_htotal (expected 0, found 1468)
+<7>[    1.218774] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_hblank_start (expected 0, found 1280)
+<7>[    1.218783] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_hblank_end (expected 0, found 1468)
+<7>[    1.218791] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_hsync_start (expected 0, found 1451)
+<7>[    1.218799] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_hsync_end (expected 0, found 1459)
+<7>[    1.218807] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_vdisplay (expected 0, found 768)
+<7>[    1.218815] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_vtotal (expected 0, found 784)
+<7>[    1.218823] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_vblank_start (expected 0, found 768)
+<7>[    1.218831] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_vblank_end (expected 0, found 784)
+<7>[    1.218839] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_vsync_start (expected 0, found 779)
+<7>[    1.218847] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_vsync_end (expected 0, found 781)
+<7>[    1.218855] [drm:pipe_config_err] mismatch in pixel_multiplier (expected 0, found 1)
+<7>[    1.218864] [drm:pipe_config_err] mismatch in base.adjusted_mode.flags (2) (expected 0, found 2)
+<7>[    1.218872] [drm:pipe_config_err] mismatch in base.adjusted_mode.flags (8) (expected 0, found 8)
+<7>[    1.218881] [drm:pipe_config_err] mismatch in pipe_bpp (expected 0, found 24)
+<7>[    1.218888] [drm:pipe_config_err] mismatch in base.adjusted_mode.crtc_clock (expected 0, found 69050)
+<7>[    1.218896] [drm:pipe_config_err] mismatch in port_clock (expected 0, found 69050)
+<7>[    1.218904] [drm:intel_dump_pipe_config] [CRTC:32:pipe A][modeset]
+<7>[    1.218929] [drm:intel_dump_pipe_config] cpu_transcoder: A, pipe bpp: 24, dithering: 0
+<7>[    1.218936] [drm:intel_dump_pipe_config] audio: 0, infoframes: 0
+<7>[    1.218942] [drm:intel_dump_pipe_config] requested mode:
+<7>[    1.218953] [drm:drm_mode_debug_printmodeline] Modeline 0:"1280x768" 60 69050 1280 1451 1459 1468 768 779 781 784 0x48 0xa
+<7>[    1.218959] [drm:intel_dump_pipe_config] adjusted mode:
+<7>[    1.218969] [drm:drm_mode_debug_printmodeline] Modeline 0:"1280x768" 60 69050 1280 1451 1459 1468 768 779 781 784 0x48 0xa
+<7>[    1.218979] [drm:intel_dump_pipe_config] crtc timings: 69050 1280 1451 1459 1468 768 779 781 784, type: 0x48 flags: 0xa
+<7>[    1.218987] [drm:intel_dump_pipe_config] port clock: 69050, pipe src size: 1280x768, pixel rate 69050
+<7>[    1.218995] [drm:intel_dump_pipe_config] num_scalers: 2, scaler_users: 0x0, scaler_id: 0
+<7>[    1.219002] [drm:intel_dump_pipe_config] pch pfit: pos: 0x00000000, size: 0x00000000, disabled
+<7>[    1.219008] [drm:intel_dump_pipe_config] ips: 0, double wide: 0
+<7>[    1.219020] [drm:bxt_dump_hw_state] dpll_hw_state: ebb0: 0x0, ebb4: 0x0,pll0: 0x0, pll1: 0x0, pll2: 0x0, pll3: 0x0, pll6: 0x0, pll8: 0x0, pll9: 0x0, pll10: 0x0, pcsdw12: 0x0
+<7>[    1.219027] [drm:intel_dump_pipe_config] planes on this crtc
+<7>[    1.219034] [drm:intel_dump_pipe_config] [PLANE:30:plane 1A] disabled, scaler_id = -1
+<7>[    1.219041] [drm:intel_dump_pipe_config] [PLANE:31:plane 2A] disabled, scaler_id = -1
+<7>[    1.219049] [drm:intel_atomic_check] New cdclk calculated to be atomic 144000, actual 144000
+<7>[    1.219070] [drm:bxt_get_dpll] [CRTC:32:pipe A] using pre-allocated PORT PLL B
+<7>[    1.219078] [drm:intel_reference_shared_dpll] using PORT PLL B for pipe A
+<7>[    1.219088] [drm:skl_update_scaler] scaler_user index 0.31: Staged freeing scaler id 0 scaler_users = 0x0
+<7>[    1.222212] [drm:intel_power_well_enable] enabling always-on
+<7>[    1.222227] [drm:intel_power_well_enable] enabling DC off
+<7>[    1.222374] [drm:intel_power_well_enable] enabling power well 2
+<7>[    1.222472] [drm:skl_set_power_well] Enabling power well 2
+<7>[    1.222714] [drm:intel_power_well_enable] enabling dpio-common-bc
+<7>[    1.224137] [drm:intel_atomic_commit_tail] [ENCODER:33:DDI B]
+<7>[    1.224145] [drm:intel_atomic_commit_tail] [ENCODER:38:DDI C]
+<7>[    1.224191] [drm:verify_single_dpll_state.isra.116] PORT PLL A
+<7>[    1.224232] [drm:verify_single_dpll_state.isra.116] PORT PLL B
+<7>[    1.224272] [drm:verify_single_dpll_state.isra.116] PORT PLL C
+<7>[    1.224554] [drm:intel_enable_shared_dpll] enable PORT PLL B (active 1, on? 0) for crtc 32
+<7>[    1.224563] [drm:intel_enable_shared_dpll] enabling PORT PLL B
+<7>[    1.226611] [drm:skylake_pfit_enable] for crtc_state = ffff880011409000
+<7>[    1.227228] [drm:intel_enable_pipe] enabling pipe A
+<7>[    1.237412] [drm:verify_connector_state.isra.84] [CONNECTOR:34:HDMI-A-1]
+<7>[    1.237568] [drm:intel_atomic_commit_tail] [CRTC:32:pipe A]
+<7>[    1.238970] [drm:verify_single_dpll_state.isra.116] PORT PLL B
+<6>[    1.337002] usb 1-4: new full-speed USB device number 2 using xhci_hcd
+<6>[    1.490987] dwc3 dwc3.0.auto: dwc3_suspend_common
+<13>[    1.492604] init: Service 'recovery_panel' (pid 1553) exited with status 255
+<6>[    1.504687] usb 1-4: New USB device found, idVendor=04d8, idProduct=00df
+<6>[    1.504695] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+<6>[    1.504701] usb 1-4: Product: MCP2200 USB Serial Port Emulator
+<6>[    1.504707] usb 1-4: Manufacturer: Microchip Technology Inc.
+<6>[    1.504712] usb 1-4: SerialNumber: 0002428800
+<6>[    1.507436] cdc_acm 1-4:1.0: ttyACM1: USB ACM device
+<6>[    1.513633] hid-generic 0003:04D8:00DF.0001: hiddev0,hidraw0: USB HID v1.11 Device [Microchip Technology Inc. MCP2200 USB Serial Port Emulator] on usb-0000:00:15.0-4/input2
+<6>[    1.645980] EXT4-fs (vda16): recovery complete
+<6>[    1.645997] EXT4-fs (vda16): mounted filesystem with ordered data mode. Opts: (null)
+<6>[    1.650986] ti949 7-000c: SoC temperature in delayed work = 33
+<7>[    1.703085] [drm:intel_ring_workarounds_emit] Number of Workarounds emitted: 15
+<6>[    1.770016] usb 1-1: new high-speed USB device number 3 using xhci_hcd
+<6>[    1.935035] usb 1-1: New USB device found, idVendor=0781, idProduct=5575
+<6>[    1.935050] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+<6>[    1.935060] usb 1-1: Product: Cruzer Glide
+<6>[    1.935071] usb 1-1: Manufacturer: SanDisk
+<6>[    1.935080] usb 1-1: SerialNumber: 4C530001290705100150
+<6>[    1.939331] usb-storage 1-1:1.0: USB Mass Storage device detected
+<6>[    1.940664] scsi host0: usb-storage 1-1:1.0
+<5>[    2.947334] scsi 0:0:0:0: Direct-Access     SanDisk  Cruzer Glide     1.00 PQ: 0 ANSI: 6
+<5>[    2.952099] sd 0:0:0:0: Attached scsi generic sg0 type 0
+<5>[    2.952886] sd 0:0:0:0: [sda] 30031872 512-byte logical blocks: (15.4 GB/14.3 GiB)
+<5>[    2.954168] sd 0:0:0:0: [sda] Write Protect is off
+<7>[    2.954177] sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+<5>[    2.954577] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+<6>[    2.983196]  sda: sda1
+<5>[    2.989932] sd 0:0:0:0: [sda] Attached SCSI removable disk
+<4>[    3.015599] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+<5>[   33.882446] random: nonblocking pool is initialized
+<12>[   60.777188] healthd: battery none chg= 2019-04-18 19:21:31.567133139 UTC

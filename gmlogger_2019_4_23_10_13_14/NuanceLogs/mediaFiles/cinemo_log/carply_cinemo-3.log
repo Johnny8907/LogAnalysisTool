@@ -1,0 +1,108 @@
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() =>: szid=CarPlay/KeychainPath, szvalue=/data/data/com.gm.domain.server.delayed/files
+io-nme L0 19:35:45.390 T3907 NmeApp NMECTL_SET_OPTION [Z2]
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() <=: CinemoNoError
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() =>: szid=CarPlay/KeychainName, szvalue=AppleKeyChain
+io-nme L0 19:35:45.390 T3907 NmeApp NMECTL_SET_OPTION [Z2]
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() <=: CinemoNoError
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() =>: szid=CarPlay/IAP/FilePath, szvalue=/data/data/com.gm.domain.server.delayed/files
+io-nme L0 19:35:45.390 T3907 NmeApp NMECTL_SET_OPTION [Z2]
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() <=: CinemoNoError
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() =>: szid=CarPlay/WifiTransportName, szvalue=br0
+io-nme L0 19:35:45.390 T3907 NmeApp NMECTL_SET_OPTION [Z2]
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() <=: CinemoNoError
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() =>: szid=AppleAuth/URL, szvalue=ddp://[::1]:30001
+io-nme L0 19:35:45.390 T3907 NmeApp NMECTL_SET_OPTION [Z2]
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() <=: CinemoNoError
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() =>: szid=Plugin/AudioCapture, szvalue=NmeAudioCaptureOpenSLES
+io-nme L0 19:35:45.390 T3907 NmeApp NMECTL_SET_OPTION [Z2]
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() <=: CinemoNoError
+io-nme L2 19:35:45.390 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() =>: szid=Plugin/AudioDevice, szvalue=NmeDeviceAsyncOpenSLES
+io-nme L0 19:35:45.390 T3907 NmeApp NMECTL_SET_OPTION [Z2]
+io-nme L2 19:35:45.391 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() <=: CinemoNoError
+io-nme L2 19:35:45.391 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() =>: szid=Video/HardwareDecode, szvalue=TRUE
+io-nme L0 19:35:45.391 T3907 NmeApp NMECTL_SET_OPTION [Z2]
+io-nme L2 19:35:45.391 T3907 SDK::CinemoOption [0x00007F97CC3E4370]->SetOption() <=: CinemoNoError
+io-nme L0 19:35:45.392 T3907 SDK::CinemoConfig [0x00007F97CC3E4370]->SetPluginDirectory() =>: szdir=/system/lib64
+io-nme L0 19:35:45.392 T3907 NmeApp NMECTL_INIT [Z2]
+io-nme L2 19:35:45.392 T5486 NmeClassFactory Init(/system/lib64) [Z2]
+io-nme L2 19:35:45.392 T5486 NmeClassModules Initialize(): using plugin path: /system/lib64 [Z2]
+io-nme L1 19:35:45.392 T5486 NmeClassDLL NmeBaseClasses 1.189.1.91513 stable-20180811-0328-gm_harman_info3_my21 Mar-22-2019 androidndk_GMHarmanINFO3MidHigh_MY21_gm_harman [Z2]
+io-nme L1 19:35:45.417 T3907 NmeClassDLL NmeSDK 1.189.1.91513 stable-20180811-0328-gm_harman_info3_my21 Mar-22-2019 androidndk_GMHarmanINFO3MidHigh_MY21_gm_harman
+io-nme L0 19:35:45.417 T3907 SDK::CinemoConfig [0x00007F97CC3E4370]->SetPluginDirectory() <=: CinemoNoError
+io-nme L1 19:35:45.418 T3907 CinemoConfig [0x00007F97CC3E4370]->Delete() =>
+io-nme L0 19:35:45.418 T3907 NmeApp NMECTL_EXIT [Z2]
+io-nme L1 19:35:45.418 T3907 CinemoConfig [0x00007F97CC3E4370]->Delete() <=: CinemoNoError
+io-nme L2 19:35:45.627 T5461 SDK::CinemoCarPlay CinemoCreateCarPlay() =>: pp=00007F97BD73DDC8
+io-nme L2 19:35:45.645 T5461 NmeClassDLL NmeCarPlay 1.189.1.91513 stable-20180811-0328-gm_harman_info3_my21 Mar-22-2019 androidndk_GMHarmanINFO3MidHigh_MY21_gm_harman
+io-nme L2 19:35:45.645 T5461 SDK::CarPlay NmeCreateCinemoCarPlay() =>: pp=00007F97BD73DDC8
+io-nme L2 19:35:45.645 T5461 /Cinemo/CarPlay NmeCarPlay created
+io-nme L0 19:35:45.645 T5461 CarPlay [0x00007F97BCE7A000]->Create() =>
+io-nme L2 19:35:45.645 T5461 /Cinemo/CarPlay Create()
+io-nme L2 19:35:45.645 T5461 /Cinemo/CarPlay Running comm plugin r14
+io-nme L2 19:35:45.645 T5461 /Cinemo/CarPlay Create() we are using zeroconf impl: DNSResponder
+io-nme L2 19:35:45.645 T5461 /Cinemo/CarPlay/NetworkListener Create()
+io-nme L0 19:35:45.646 T5461 CarPlay [0x00007F97BCE7A000]->Create() <=: CinemoNoError
+io-nme L2 19:35:45.646 T5461 SDK::CarPlay NmeCreateCinemoCarPlay() <=: CinemoNoError
+io-nme L2 19:35:45.646 T5461 SDK::CinemoCarPlay CinemoCreateCarPlay() <=: CinemoNoError
+io-nme L0 19:35:45.647 T5461 SDK::CinemoMetapool CinemoCreateMetapool() =>: pp=00007F97BD73DDC8
+io-nme L0 19:35:45.647 T5461 CinemoMetapool [0x00007F97BCF59A00]->Create() =>
+io-nme L0 19:35:45.647 T5461 CinemoMetapool [0x00007F97BCF59A00]->Create() <=: CinemoNoError
+io-nme L0 19:35:45.647 T5461 SDK::CinemoMetapool CinemoCreateMetapool() <=: CinemoNoError
+io-nme L2 19:35:45.647 T5521 /Cinemo/CarPlay Network changed: 3
+io-nme L2 19:35:45.649 T5461 SDK::CarPlay [0x00007F97BCE7A000]->SetLimitedUI() =>: onOff=4294967295
+io-nme L2 19:35:45.649 T5461 /Cinemo/CarPlay OnSetLimitedUI(-1)
+io-nme L2 19:35:45.649 T5461 SDK::CarPlay [0x00007F97BCE7A000]->SetLimitedUI() <=: CinemoNoError
+io-nme L2 19:35:45.653 T5461 SDK::CarPlay [0x00007F97BCE7A000]->SetInfo() =>
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay [0x00007F97BCE7A000] Open(): Dump ppool begin ------
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay ItemCount: 34
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay MemoryUsage: 4771 bytes
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 audioLatencies: "?type=MainAudio&audioType=default&outputLatencyMicros=200000&inputLatencyMicros=150000"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 01 audioLatencies: "?type=MainAudio&audioType=alert&outputLatencyMicros=104800"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 02 audioLatencies: "?type=MainAudio&audioType=media&outputLatencyMicros=294000"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 03 audioLatencies: "?type=MainAudio&audioType=telephony&outputLatencyMicros=322000&inputLatencyMicros=150000"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 04 audioLatencies: "?type=MainAudio&audioType=speechRecognition&outputLatencyMicros=262000&inputLatencyMicros=150000"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 05 audioLatencies: "?type=MainAudio&audioType=compatibility&outputLatencyMicros=294000"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 06 audioLatencies: "?type=AltAudio&audioType=default&outputLatencyMicros=266000"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 07 audioLatencies: "?type=AltAudio&audioType=compatibility&outputLatencyMicros=266000"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 manufacturer: "General Motors"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 rightHandDrive: 0
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 model: "myChevrolet"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 oemIconVisible: "0"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 audioFormats: "?type=100&audioInputFormats=201326672&audioOutputFormats=201326672&audioType=default"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 01 audioFormats: "?type=100&audioOutputFormats=32768&audioType=media"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 02 audioFormats: "?type=100&audioInputFormats=201326672&audioOutputFormats=201326672&audioType=telephony"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 03 audioFormats: "?type=100&audioInputFormats=134217792&audioOutputFormats=134217792&audioType=speechRecognition"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 04 audioFormats: "?type=100&audioOutputFormats=33587200&audioType=alert"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 05 audioFormats: "?type=100&audioInputFormats=84&audioOutputFormats=32852&audioType=compatibility"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 06 audioFormats: "?type=101&audioOutputFormats=33587200&audioType=default"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 07 audioFormats: "?type=101&audioOutputFormats=33587200&audioType=compatibility"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 08 audioFormats: "?type=102&audioOutputFormats=8421376&audioType=media"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 extendedFeatures: "enhancedRequestCarUI"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 01 extendedFeatures: "vocoderInfo"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 hidLanguages: "en"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 bluetoothIDs: "74:6F:F7:93:0D:14"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 deviceID: "74:6F:F7:93:0D:14"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 OSInfo: "6.0.1"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 limitedUIElements: "softKeyboard"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 01 limitedUIElements: "nonMusicLists"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 02 limitedUIElements: "musicLists"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 00 displays: "?features=10&maxFPS=30&heightPixels=768&heightPhysical=104&widthPixels=1280&widthPhysical=174&uuid=e5f7a68d-7b0f-4305-984b-974f677a150F&primaryInputDevice=1"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 03 hidDevices: "?displayUUID=e5f7a68d-7b0f-4305-984b-974f677a150F&hidCountryCode=1&hidDescriptor=0x05,0x0D,0x09,0x04,0xA1,0x01,0x05,0x0D,0x09,0x22,0xA1,0x02,0x05,0x0D,0x09,0x33,0x15,0x00,0x25,0x01,0x75,0x01,0x95,0x01,0x81,0x02,0x75,0x07,0x95,0x01,0x81,0x01,0x05,0x01,0x09,0x30,0x15,0x00,0x26,0x00,0x05,0x75,0x10,0x95,0x01,0x81,0x02,0x09,0x31,0x15,0x00,0x26,0x00,0x03,0x75,0x10,0x95,0x01,0x81,0x02,0xC0,0xC0&hidProductID=1&hidVendorID=1&name=TouchDescriptor"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 02 hidDevices: "?displayUUID=e5f7a68d-7b0f-4305-984b-974f677a150F&hidCountryCode=1&hidDescriptor=0x05,0x0B,0x09,0x01,0xA1,0x01,0x05,0x0B,0x09,0x20,0x09,0x26,0x15,0x00,0x25,0x01,0x75,0x01,0x95,0x02,0x81,0x02,0x75,0x06,0x95,0x01,0x81,0x01,0xC0&hidProductID=1&hidVendorID=1&name=TelephonyButtonHIDName"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay title 00 index 04 hidDevices: "?displayUUID=e5f7a68d-7b0f-4305-984b-974f677a150F&hidCountryCode=1&hidDescriptor=0x05,0x01,0x09,0x08,0xA1,0x01,0x05,0x09,0x09,0x01,0x15,0x00,0x25,0x01,0x75,0x01,0x95,0x01,0x81,0x02,0x05,0x0C,0x0A,0x24,0x02,0x15,0x00,0x25,0x01,0x75,0x01,0x95,0x01,0x81,0x02,0x75,0x06,0x95,0x01,0x81,0x01,0x05,0x01,0x09,0x30,0x09,0x31,0x15,0x81,0x25,0x7F,0x75,0x08,0x95,0x02,0x81,0x02,0x05,0x01,0x09,0x38,0x15,0x81,0x25,0x7F,0x75,0x08,0x95,0x01,0x81,0x06,0xC0&hidProductID=1&hidVendorID=1&name=KnobDescriptorHIDName"
+io-nme L0 19:35:45.653 T5461 SDK::CarPlay [0x00007F97BCE7A000] Open(): Dump ppool end --------
+io-nme L2 19:35:45.653 T5461 SDK::CarPlay [0x00007F97BCE7A000]->SetInfo() <=: CinemoNoError
+io-nme L2 19:35:45.655 T5461 SDK::CarPlay [0x00007F97BCE7A000]->SetCallbacks() =>: puser=0x00007F97D2A7C900, ...
+io-nme L1 19:35:45.655 T5461 /Cinemo/CarPlay SetCallbacks(): puser=0x00007F97D2A7C900,fnInitialize=0x00007F97BD9B9900,fnFinalize=0x00007F97BD9B9AE0,fnModesChanged=0x00007F97BD9B9C80,fnRequestUI=0x00007F97BD9B9DC0,fnDisableBluetooth=0x00007F97BD9B9EF0,fnSetInputMode=0x0000000000000000,fnGetCertificate=0x0000000000000000,fnGetSignature=0x0000000000000000,fnAudioPrepare=0x00007F97BD9BA3C0,fnAudioStop=0x00007F97BD9BA520,fnAudioRampVolume=0x00007F97BD9BA6D0,fnHapticFeedback=0x0000000000000000,fnVideoPrepare=0x00007F97BD9BA7B0,fnVideoStop=0x00007F97BD9BA8E0,fnHeartbeat=0x0000000000000000,fnCarplayServiceUpdate=0x00007F97BD9BAAE0,
+io-nme L2 19:35:45.655 T5461 SDK::CarPlay [0x00007F97BCE7A000]->SetCallbacks() <=: CinemoNoError
+io-nme L2 19:35:45.655 T5461 SDK::CarPlay [0x00007F97BCE7A000]->Start() =>
+io-nme L2 19:35:45.655 T5461 /Cinemo/CarPlay Start()
+io-nme L2 19:35:45.655 T5522 /Cinemo/CarPlay ThreadProc()
+io-nme L5 19:35:45.655 T5522 /Cinemo/CarPlay/CommPlugin 2019-04-18 03:35:45.655728 PM === LogUtils (com.gm.domain.server.delayed, PID 3886) ===
+io-nme L3 19:35:45.657 T5522 /Cinemo/CarPlay/IOS Item "firmwareRevision" not found in metapool.
+io-nme L1 19:35:45.666 T5522 DNS_SD DNSServiceRegisterReply CarPlay:_airplay._tcp.:local.:<null>
+io-nme L1 19:35:45.671 T5461 NmeApp Create() 1.189.1.91513 stable-20180811-0328-gm_harman_info3_my21 Mar-22-2019
+io-nme L0 19:35:45.672 T5461 NmeApp NMECTL_SET_LOCAL_OPTIONS
+io-nme L0 19:35:45.687 T5461 NmeApp NMECTL_GET_OPTIONS_INTERFACE [Z3]
+io-nme L1 19:35:45.690 T5461 NmeApp Create() 1.189.1.91513 stable-20180811-0328-gm_harman_info3_my21 Mar-22-2019
+io-nme L5 19:35:45.709 T3907 NmeClient Reference counter leak !!! Forced cleanup with possible crash !!!

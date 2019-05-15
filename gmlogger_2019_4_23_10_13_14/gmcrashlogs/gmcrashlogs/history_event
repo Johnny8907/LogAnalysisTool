@@ -1,0 +1,35 @@
+#V1.0 CURRENTUPTIME   0000:00:00              
+#EVENT  ID                    DATE                 TYPE
+INFO    847aa92da3684dcca1cd  2019-04-18/15:34:46  SWUPDATE        
+REBOOT  8bc2d2dd7c29c6ca7142  2019-04-18/15:34:46  POWER-ON         0000:00:00
+INFO    d58e310c20a4e1c35a3c  2019-04-18/15:34:46  BOOT_LOGS /data/data/gmlogger/gmcrashlogs/stats0_d58e310c20a4e1c35a3c
+STATE   e112c5b7e3d85cc0fc33  2019-04-18/15:34:46  UNKNOWN_ENCRYPTION
+ERROR   aec2ebbbfab2f22dbd48  2019-04-18/15:34:47  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/info
+INFO    20a256447a19e840486c  2019-04-18/15:34:47  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/stats1_20a256447a19e840486c
+INFO    a828b7648a6cf7fa22d7  2019-04-18/15:34:47  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/stats2_a828b7648a6cf7fa22d7
+UPTIME  00000000000000000000  2019-04-18/15:37:57  0000:00:00
+REBOOT  e63bb3ea3f48bd0695dc  2019-04-18/15:37:57  POWER-ON         0000:00:00
+INFO    d15b61d43dd31ded9c81  2019-04-18/15:37:58  BOOT_LOGS /data/data/gmlogger/gmcrashlogs/stats3_d15b61d43dd31ded9c81
+STATE   2af2b1faf70c9e323e6b  2019-04-18/15:37:58  UNKNOWN_ENCRYPTION
+ERROR   cd86d7b575a0bafb90a8  2019-04-18/15:37:58  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/info
+INFO    78e23e5c8e47f1a0d7f8  2019-04-18/15:37:59  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/stats4_78e23e5c8e47f1a0d7f8
+INFO    c69c60322bb334c79b8d  2019-04-18/15:37:59  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/stats5_c69c60322bb334c79b8d
+CRASH   54bfdcdec41c712bd4f4  2019-04-18/16:53:31  JAVACRASH /data/data/gmlogger/gmcrashlogs/crashlog0_54bfdcdec41c712bd4f4
+CRASH   5a29d3d5a73a10cea9e5  2019-04-18/23:06:46  JAVACRASH /data/data/gmlogger/gmcrashlogs/crashlog1_5a29d3d5a73a10cea9e5
+UPTIME  00000000000000000000  2019-04-20/01:36:34  0000:00:00
+REBOOT  db489e4339017dd7daad  2019-04-20/01:36:34  POWER-ON         0000:00:00
+INFO    27c4413e4f4ed51dec13  2019-04-20/01:36:35  BOOT_LOGS /data/data/gmlogger/gmcrashlogs/stats6_27c4413e4f4ed51dec13
+STATE   15c2da87d95a98d6f7f3  2019-04-20/01:36:35  UNKNOWN_ENCRYPTION
+ERROR   d816e6711439ab58a4b5  2019-04-20/01:36:35  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/info
+INFO    7c52557b07f8b55882ad  2019-04-20/01:36:35  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/stats7_7c52557b07f8b55882ad
+INFO    e34cc85fb63093f6d100  2019-04-20/01:36:35  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/stats8_e34cc85fb63093f6d100
+CRASH   42b78604594817738057  2019-04-20/07:43:18  JAVACRASH /data/data/gmlogger/gmcrashlogs/crashlog2_42b78604594817738057
+CRASH   59922c03d90c03262fe4  2019-04-20/23:26:44  TOMBSTONE /data/data/gmlogger/gmcrashlogs/crashlog3_59922c03d90c03262fe4
+CRASH   b06e08006a7046c7c499  2019-04-20/23:32:14  JAVACRASH /data/data/gmlogger/gmcrashlogs/crashlog4_b06e08006a7046c7c499
+UPTIME  00000000000000000000  2019-04-21/12:49:19  0000:00:00
+REBOOT  156c0cd76579e52710d3  2019-04-21/12:49:19  POWER-ON         0000:00:00
+INFO    4126e8d069bb882fe1ba  2019-04-21/12:49:20  BOOT_LOGS /data/data/gmlogger/gmcrashlogs/stats9_4126e8d069bb882fe1ba
+STATE   f7f0038855d9f3ea891b  2019-04-21/12:49:20  UNKNOWN_ENCRYPTION
+ERROR   a07c6db398ddf0b6917d  2019-04-21/12:49:20  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/info
+INFO    7e29e71f9068bae3ce56  2019-04-21/12:49:20  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/stats10_7e29e71f9068bae3ce56
+INFO    3922004d9e043c07b72e  2019-04-21/12:49:20  CRASHLOG_WATCHER /data/data/gmlogger/gmcrashlogs/stats11_3922004d9e043c07b72e

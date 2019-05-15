@@ -1,0 +1,1 @@
+<cinemo_logappenders> <logappender target="CINEMO_LOGTARGET_FILE" filename="/data/mediaFiles/cinemo_log/cinemo_.log?mode=a&amp;postfix=pname&amp;rollingMaxSizeBytes=10485760&amp;rollingMaxIndex=2" layout="CINEMO_LOGLAYOUT_CSV"> <config level="CINEMO_LOGLEVEL_TRACE"/>  <config level="CINEMO_LOGLEVEL_VERBOSE" path="/Cinemo/SDK"/> </logappender> </cinemo_logappenders>
