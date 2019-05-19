@@ -6,10 +6,10 @@ class DenaliTemplate: Template {
     }
 
     override fun getDefaultTemplate(): MutableMap<String, String> {
-        return hashMapOf("a GM HeadUnit" to "Denali_app_start",
-            "[init] start app version :" to "Start app version",
+        return hashMapOf("a GM HeadUnit" to "程序启动",
+            "[init] start app version :" to "应用版本",
             "GLEngine version: " to "GLEngine version",
             "[init] initAutoSdk async thread starts preparation" to "Auto sdk init",
-            "wayPoints size: 0" to "way point size")
+            "wayPoints size: 0" to "way point 数量")
     }
 }
