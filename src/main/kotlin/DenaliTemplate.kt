@@ -1,6 +1,13 @@
 import java.io.File
 
 class DenaliTemplate: Template {
+    companion object {
+        const val NO_RESULT_FOUND = "No result found"
+        const val DENALI_START_LOG = "a GM HeadUnit"
+        const val TIME_COLUM_INDEX = 1
+        const val PROCESS_ID_INDEX = 2
+    }
+
     override fun getTemplateFromFile(file: File): MutableMap<String, String> {
         return hashMapOf()
     }
@@ -11,5 +18,34 @@ class DenaliTemplate: Template {
             "GLEngine version: " to "GLEngine version",
             "[init] initAutoSdk async thread starts preparation" to "Auto sdk init",
             "wayPoints size: 0" to "way point 数量")
+    }
+
+    override fun getProcessStartTime(processID:Int, processDataMap: MutableMap<Int, MutableList<String>>): String {
+        var resultStr = NO_RESULT_FOUND
+        if (processDataMap.containsKey(processID)) {
+            processDataMap[processID]?.forEach {
+                if (it.contains(DENALI_START_LOG)) resultStr = getTimeStrFromLine(it)
+            }
+        }
+
+        return resultStr
+    }
+
+    override fun getProcessIDFromLine(str: String): Int {
+        try {
+            return str.split("\\s+".toRegex())[PROCESS_ID_INDEX].toInt()
+        } catch (e:Exception) {
+            println("$str met Exception")
+        }
+        return 0
+    }
+
+    override fun getTimeStrFromLine(str: String): String {
+        try {
+            return str.split("\\s+".toRegex())[TIME_COLUM_INDEX]
+        } catch (e:Exception) {
+            println("$str met Exception")
+        }
+        return ""
     }
 }

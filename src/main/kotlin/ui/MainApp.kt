@@ -20,12 +20,12 @@ class MainView : View() {
         HashMap<Int, HashMap<Int, SequenceChartX>>() // HashMap<ProcessID, HashMap<LineNumber, Tag>>
     override val root = vbox {
         button("解压gmlogger文件") {
-            action { gmLoggerUtils.formatGMLogger("gmlogger_2019_4_23_10_13_14") }
+            action { gmLoggerUtils.formatGMLogger("gmlogger") }
         }
         button("将log加载到内存中 并生成tag") {
             action {
                 //生成mainProcessMap
-                val fileArray = gmLoggerUtils.getMainLogs("gmlogger_2019_4_23_10_13_14")
+                val fileArray = gmLoggerUtils.getMainLogs("gmlogger")
                 fileArray?.forEach { file ->
                     val mainProcessIDList = gmLoggerUtils.getMainProcessIDList(file)
                     mainProcessLogMap = gmLoggerUtils.filterTNProcessID(file, mainProcessIDList)
@@ -35,7 +35,9 @@ class MainView : View() {
             }
         }
         button("生成Denali Process文件") {
-
+            action {
+                gmLoggerUtils.writeProcessLogToFile(mainProcessLogMap)
+            }
         }
         button("生成时序图") {
             action {
