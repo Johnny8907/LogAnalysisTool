@@ -13,7 +13,7 @@ class GMLoggerUtils {
         const val MAIN_FILE_NAME_KEY_WORD = "main.log"
     }
 
-    private val denaliLogUtils = DenaliLogUtils()
+    private val denaliTemplate = DenaliTemplate()
     fun formatGMLogger(path: String) {
         //1. create a main folder under given path
         val inputFile = File(path)
@@ -126,7 +126,7 @@ class GMLoggerUtils {
             for (keyword in templateMap.keys) {
                 //If this line contains the template key string, add tag for it. else remove this line from log
                 if (value.contains(keyword)) {
-                    resultList[index] = SequenceChartX(denaliLogUtils.getTimeStrFromLine(value), keyword)
+                    resultList[index] = SequenceChartX(denaliTemplate.getTimeStrFromLine(value), keyword)
                 }
             }
         }
@@ -137,7 +137,7 @@ class GMLoggerUtils {
         val result = mutableListOf<Int>()
         for (readLine in file.readLines()) {
             if (isTNMainProcess(readLine)) {
-                val processID = denaliLogUtils.getProcessIDFromLine(readLine)
+                val processID = denaliTemplate.getProcessIDFromLine(readLine)
                 if (!result.contains(processID)) {
                     result.add(processID)
                 }
@@ -149,7 +149,7 @@ class GMLoggerUtils {
     fun filterTNProcessID(file: File, processIDList: MutableList<Int>): HashMap<Int, MutableList<String>> {
         val result = hashMapOf<Int, MutableList<String>>()
         for (readLine in file.readLines()) {
-            val processID = denaliLogUtils.getProcessIDFromLine(readLine)
+            val processID = denaliTemplate.getProcessIDFromLine(readLine)
             if (processIDList.contains(processID)) {
                 if (result.containsKey(processID)) {
                     result[processID]?.add(readLine)
