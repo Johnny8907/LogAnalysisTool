@@ -1,9 +1,7 @@
 package ui
 
-import DenaliTemplate
-import GMLoggerUtils
-import javafx.scene.Parent
-import model.SequenceChartX
+import controller.MainController
+import model.ProcessInfo
 import tornadofx.*
 
 /**
@@ -11,40 +9,57 @@ import tornadofx.*
  * @Date: 2019/5/19 17:12
  */
 class MainApp : App(MainView::class)
-class MenuView: View() {
-    private val gmLoggerUtils: GMLoggerUtils = GMLoggerUtils()
-    private var mainProcessLogMap = HashMap<Int, MutableList<String>>() // HashMap<ProcessID, List<Logs>>
-    private var mainProcessLogTagMap =
-        HashMap<Int, HashMap<Int, SequenceChartX>>() // HashMap<ProcessID, HashMap<LineNumber, Tag>>
-    override val root = vbox{
-        menubar {
-            menu("解压gmlogger文件") { action { gmLoggerUtils.formatGMLogger("gmlogger") } }
-            menu("将log加载到内存中并生成tag") {
+
+class MenuView : View() {
+    private val controller: MainController by inject()
+
+    override val root = borderpane {
+        left = vbox {
+            button("解压gmlogger文件") {
                 action {
-                    val fileArray = gmLoggerUtils.getMainLogs("gmlogger")
-                    fileArray?.forEach { file ->
-                        val mainProcessIDList = gmLoggerUtils.getMainProcessIDList(file)
-                        mainProcessLogMap = gmLoggerUtils.filterTNProcessID(file, mainProcessIDList)
-                    }
-                    //生成tagMap
-                    mainProcessLogTagMap = gmLoggerUtils.generateTagMap(mainProcessLogMap, DenaliTemplate())
+                    runAsync { controller.formatMainFiles() }
                 }
             }
-            menu("生成Denali各个进程文件") { action { gmLoggerUtils.writeProcessLogToFile(mainProcessLogMap) } }
+            button("将log加载到内存中并生成tag") {
+                action {
+                    runAsync { controller.loadLogsToMemoryAndGenerateTag() }
+                }
+            }
+            button("生成Denali各个进程文件") {
+                action {
+                    runAsync { controller.generateProcessIDFiles() }
+                }
+            }
+            button("生成Denali各个进程时间信息表格") {
+                action {
+                    runAsync {
+                        controller.generateProcessInfoTable()
+                    }
+                }
+            }
+        }
+        center = tableview<ProcessInfo> {
+            items = controller.processInfo.asObservable()
+
+            column("Process ID", ProcessInfo::processId)
+            column("Process start time", ProcessInfo::processStartTime)
+            column("Process end time", ProcessInfo::processEndTime)
         }
     }
 }
-class ContentView: View() {
-    override val root = vbox{
+
+class ContentView : View() {
+    override val root = vbox {
         text {
 
         }
     }
 }
+
 class MainView : View() {
-    val topView = find(MenuView::class)
+    private val topView = find(MenuView::class)
     // Create a lazy reference to BottomView
-    val bottomView = find(ContentView::class)
+    private val bottomView = find(ContentView::class)
 
     override val root = borderpane {
         top = topView.root

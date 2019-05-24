@@ -1,3 +1,4 @@
+import model.ProcessInfo
 import org.apache.commons.io.FileUtils
 import java.io.File
 import java.io.IOException
@@ -57,56 +58,35 @@ class GMLoggerUtils {
 
     fun getMainLogs(path: String): Array<File>? {
         val inputFile = File("$path/$MAIN_FOLDER_NAME")
-        if (inputFile.exists()) {
-            return inputFile.listFiles()
+        return if (inputFile.exists()) {
+            inputFile.listFiles()
         } else {
-            return null
+            null
         }
     }
 
     private fun unGzipFile(compressedFile: File, decompressedFile: File) {
-
         val buffer = ByteArray(1024)
 
         try {
-
             val fileIn = FileInputStream(compressedFile)
-
             val gZIPInputStream = GZIPInputStream(fileIn)
-
             val fileOutputStream = FileOutputStream(decompressedFile)
-
-            var bytes_read: Int
-
+            var bytesRead: Int
             while (true) {
-                bytes_read = gZIPInputStream.read(buffer)
-                if (bytes_read > 0) {
-                    fileOutputStream.write(buffer, 0, bytes_read)
+                bytesRead = gZIPInputStream.read(buffer)
+                if (bytesRead > 0) {
+                    fileOutputStream.write(buffer, 0, bytesRead)
                 } else {
                     break
                 }
             }
-
             gZIPInputStream.close()
             fileOutputStream.close()
-
-            println("The file was decompressed successfully!")
-
         } catch (ex: IOException) {
             ex.printStackTrace()
         }
     }
-
-//    fun filterLogByTemplate(
-//        mainProcessMap: HashMap<Int, MutableList<String>>,
-//        template: Template
-//    ): HashMap<Int, MutableList<String>> {
-//        val resultMap = hashMapOf<Int, MutableList<String>>()
-//        mainProcessMap.forEach { (key, value) ->
-//            resultMap[key] = filterLogByTemplate(value, template)
-//        }
-//        return resultMap
-//    }
 
     fun generateTagMap(
         mainProcessMap: HashMap<Int, MutableList<String>>,
@@ -126,11 +106,26 @@ class GMLoggerUtils {
             for (keyword in templateMap.keys) {
                 //If this line contains the template key string, add tag for it. else remove this line from log
                 if (value.contains(keyword)) {
-                    resultList[index] = SequenceChartX(denaliTemplate.getTimeStrFromLine(value), keyword)
+                    resultList[index] = SequenceChartX(denaliTemplate.getTimeFromLine(value), keyword)
                 }
             }
         }
         return resultList
+    }
+
+    fun generateProcessInfoTable(map:HashMap<Int, MutableList<String>>): List<ProcessInfo> {
+        val result = mutableListOf<ProcessInfo>()
+        val comparator = Comparator<String> { s1,s2 ->
+            compareDate(s1, s2)
+        }
+        map.forEach {(key, value) ->
+            val processInfo = ProcessInfo()
+            processInfo.processId = key.toString()
+            processInfo.processStartTime = value.minWith(comparator)!!
+            processInfo.processEndTime = value.maxWith(comparator)!!
+            result.add(processInfo)
+        }
+        return result
     }
 
     fun getMainProcessIDList(file: File): MutableList<Int> {
@@ -176,5 +171,32 @@ class GMLoggerUtils {
 
     fun isTNClusterProcess(str: String): Boolean {
         return str.contains("com.telenav.arp: Denali-HMI:") && str.contains("cluster", true)
+    }
+    private fun compareDate(s1:String, s2:String):Int {
+        val d1 = denaliTemplate.getDateFromLine(s1)
+        val d2 = denaliTemplate.getDateFromLine(s2)
+        val d1array = d1.split("-")
+        val d2array = d2.split("-")
+        //对比log的月,日
+        if (d1array[0].toInt() != d2array[0].toInt()) {
+            return d1array[0].toInt() - d2array[0].toInt()
+        } else if (d1array[1].toInt() != d2array[1].toInt()){
+            return d1array[1].toInt() - d2array[1].toInt()
+        }
+        //对比log的时间
+        val t1 = denaliTemplate.getTimeFromLine(s1)
+        val t2 = denaliTemplate.getTimeFromLine(s2)
+        val t1array = t1.split(":")
+        val t2array = t2.split(":")
+        when {
+            t1array[0].toInt() != t2array[0].toInt() -> return t1array[0].toInt() - t1array[0].toInt()
+            t1array[1].toInt() != t2array[1].toInt() -> return t1array[1].toInt() - t2array[1].toInt()
+            t1array[2].toDouble() != t2array[2].toDouble() -> return when {
+                t1array[2].toDouble() - t2array[2].toDouble() > 0 -> 1
+                t2array[2].toDouble() - t2array[2].toDouble() == 0.0 -> 0
+                else -> -1
+            }
+        }
+        return 0
     }
 }

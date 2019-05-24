@@ -4,7 +4,8 @@ class DenaliTemplate: Template {
     companion object {
         const val NO_RESULT_FOUND = "No result found"
         const val DENALI_START_LOG = "a GM HeadUnit"
-        const val TIME_COLUM_INDEX = 1
+        const val DATE_INDEX = 0
+        const val TIME_INDEX = 1
         const val PROCESS_ID_INDEX = 2
     }
 
@@ -24,7 +25,7 @@ class DenaliTemplate: Template {
         var resultStr = NO_RESULT_FOUND
         if (processDataMap.containsKey(processID)) {
             processDataMap[processID]?.forEach {
-                if (it.contains(DENALI_START_LOG)) resultStr = getTimeStrFromLine(it)
+                if (it.contains(DENALI_START_LOG)) resultStr = getTimeFromLine(it)
             }
         }
 
@@ -40,9 +41,17 @@ class DenaliTemplate: Template {
         return 0
     }
 
-    override fun getTimeStrFromLine(str: String): String {
+    override fun getDateFromLine(str: String): String {
         try {
-            return str.split("\\s+".toRegex())[TIME_COLUM_INDEX]
+            return str.split("\\s+".toRegex())[DATE_INDEX]
+        } catch (e:Exception) {
+            println("$str met Exception")
+        }
+        return ""
+    }
+    override fun getTimeFromLine(str: String): String {
+        try {
+            return str.split("\\s+".toRegex())[TIME_INDEX]
         } catch (e:Exception) {
             println("$str met Exception")
         }
