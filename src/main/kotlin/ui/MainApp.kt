@@ -1,8 +1,6 @@
 package ui
 
 import controller.MainController
-import javafx.scene.layout.BorderPane
-import javafx.scene.layout.VBox
 import model.ProcessInfo
 import tornadofx.*
 
