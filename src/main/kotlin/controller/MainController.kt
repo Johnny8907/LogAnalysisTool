@@ -2,6 +2,8 @@ package controller
 
 import DenaliTemplate
 import GMLoggerUtils
+import javafx.collections.FXCollections
+import javafx.collections.ObservableList
 import model.ProcessInfo
 import model.SequenceChartX
 import tornadofx.Controller
@@ -11,7 +13,7 @@ class MainController : Controller() {
     private var mainProcessLogMap = HashMap<Int, MutableList<String>>() // HashMap<ProcessID, List<Logs>>
     private var mainProcessLogTagMap =
         HashMap<Int, HashMap<Int, SequenceChartX>>() // HashMap<ProcessID, HashMap<LineNumber, Tag>>
-    var processInfo = listOf<ProcessInfo>()
+    var processInfo: ObservableList<ProcessInfo> = FXCollections.observableArrayList(arrayListOf<ProcessInfo>())
     fun formatMainFiles() {
         gmLoggerUtils.formatGMLogger("gmlogger")
         println("formatMainFiles end!")
@@ -34,7 +36,7 @@ class MainController : Controller() {
     }
 
     fun generateProcessInfoTable() {
-        processInfo = gmLoggerUtils.generateProcessInfoTable(mainProcessLogMap)
+        processInfo.addAll(gmLoggerUtils.generateProcessInfoTable(mainProcessLogMap))
         println("generateProcessInfoTable end!")
     }
 }

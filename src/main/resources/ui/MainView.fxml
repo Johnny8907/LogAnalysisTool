@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <left>
+        <VBox>
+            <Button onAction="#uncompressFile" text="解压gmlogger文件" />
+            <Button onAction="#loadLogs" text="将log加载到内存中并生成tag" />
+            <Button onAction="#generateProcessFile" text="生成Denali各个进程文件" />
+            <Button onAction="#generateProcessTable" text="生成Denali各个进程时间信息表格" />
+        </VBox>
+    </left>
+</BorderPane>

@@ -1,6 +1,8 @@
 package ui
 
 import controller.MainController
+import javafx.scene.layout.BorderPane
+import javafx.scene.layout.VBox
 import model.ProcessInfo
 import tornadofx.*
 
@@ -10,59 +12,62 @@ import tornadofx.*
  */
 class MainApp : App(MainView::class)
 
-class MenuView : View() {
+class MainView : View() {
     private val controller: MainController by inject()
+    override val root = borderpane()
 
-    override val root = borderpane {
-        left = vbox {
-            button("解压gmlogger文件") {
-                action {
-                    runAsync { controller.formatMainFiles() }
+    init {
+        with(root) {
+            left = vbox {
+                button("解压gmlogger文件") {
+                    action {
+                        uncompressFile()
+                    }
                 }
-            }
-            button("将log加载到内存中并生成tag") {
-                action {
-                    runAsync { controller.loadLogsToMemoryAndGenerateTag() }
+
+                button("将log加载到内存中并生成tag") {
+                    action {
+                        loadLogs()
+                    }
                 }
-            }
-            button("生成Denali各个进程文件") {
-                action {
-                    runAsync { controller.generateProcessIDFiles() }
+
+                button("生成Denali各个进程文件") {
+                    action {
+                        generateProcessFile()
+                    }
                 }
-            }
-            button("生成Denali各个进程时间信息表格") {
-                action {
-                    runAsync {
-                        controller.generateProcessInfoTable()
+
+                button("生成Denali各个进程时间信息表格") {
+                    action {
+                        generateProcessTable()
                     }
                 }
             }
-        }
-        center = tableview<ProcessInfo> {
-            items = controller.processInfo.asObservable()
-
-            column("Process ID", ProcessInfo::processId)
-            column("Process start time", ProcessInfo::processStartTime)
-            column("Process end time", ProcessInfo::processEndTime)
-        }
-    }
-}
-
-class ContentView : View() {
-    override val root = vbox {
-        text {
-
+            center = tableview<ProcessInfo> {
+                items = controller.processInfo
+                column("process id",ProcessInfo::processId)
+                column("process start time", ProcessInfo::processStartTime)
+                column("process end time", ProcessInfo::processEndTime)
+            }
         }
     }
-}
 
-class MainView : View() {
-    private val topView = find(MenuView::class)
-    // Create a lazy reference to BottomView
-    private val bottomView = find(ContentView::class)
+    private fun uncompressFile() {
+        runAsync {
+            controller.formatMainFiles()
+        }
+    }
 
-    override val root = borderpane {
-        top = topView.root
-        bottom = bottomView.root
+    private fun loadLogs() {
+        runAsync { controller.loadLogsToMemoryAndGenerateTag() }
+    }
+
+    private fun generateProcessFile() {
+        runAsync {
+            controller.generateProcessIDFiles()
+        }
+    }
+    private fun generateProcessTable() {
+        runAsync { controller.generateProcessInfoTable()}
     }
 }

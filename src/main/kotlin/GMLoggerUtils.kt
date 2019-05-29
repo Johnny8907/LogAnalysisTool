@@ -120,9 +120,11 @@ class GMLoggerUtils {
         }
         map.forEach {(key, value) ->
             val processInfo = ProcessInfo()
+            val processStartTime = value.minWith(comparator)
+            val processEndTime = value.maxWith(comparator)
             processInfo.processId = key.toString()
-            processInfo.processStartTime = value.minWith(comparator)!!
-            processInfo.processEndTime = value.maxWith(comparator)!!
+            processInfo.processStartTime = denaliTemplate.getDateFromLine(processStartTime!!) + " " + denaliTemplate.getTimeFromLine(processStartTime)
+            processInfo.processEndTime = denaliTemplate.getDateFromLine(processEndTime!!) + " " + denaliTemplate.getTimeFromLine(processEndTime)
             result.add(processInfo)
         }
         return result
@@ -189,11 +191,11 @@ class GMLoggerUtils {
         val t1array = t1.split(":")
         val t2array = t2.split(":")
         when {
-            t1array[0].toInt() != t2array[0].toInt() -> return t1array[0].toInt() - t1array[0].toInt()
+            t1array[0].toInt() != t2array[0].toInt() -> return t1array[0].toInt() - t2array[0].toInt()
             t1array[1].toInt() != t2array[1].toInt() -> return t1array[1].toInt() - t2array[1].toInt()
             t1array[2].toDouble() != t2array[2].toDouble() -> return when {
                 t1array[2].toDouble() - t2array[2].toDouble() > 0 -> 1
-                t2array[2].toDouble() - t2array[2].toDouble() == 0.0 -> 0
+                t1array[2].toDouble() - t2array[2].toDouble() == 0.0 -> 0
                 else -> -1
             }
         }
