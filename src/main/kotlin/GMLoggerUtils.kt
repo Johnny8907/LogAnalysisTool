@@ -125,6 +125,7 @@ class GMLoggerUtils {
             processInfo.processId = key.toString()
             processInfo.processStartTime = denaliTemplate.getDateFromLine(processStartTime!!) + " " + denaliTemplate.getTimeFromLine(processStartTime)
             processInfo.processEndTime = denaliTemplate.getDateFromLine(processEndTime!!) + " " + denaliTemplate.getTimeFromLine(processEndTime)
+            processInfo.processLogList.addAll(value)
             result.add(processInfo)
         }
         return result

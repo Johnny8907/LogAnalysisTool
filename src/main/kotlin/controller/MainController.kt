@@ -13,7 +13,8 @@ class MainController : Controller() {
     private var mainProcessLogMap = HashMap<Int, MutableList<String>>() // HashMap<ProcessID, List<Logs>>
     private var mainProcessLogTagMap =
         HashMap<Int, HashMap<Int, SequenceChartX>>() // HashMap<ProcessID, HashMap<LineNumber, Tag>>
-    var processInfo: ObservableList<ProcessInfo> = FXCollections.observableArrayList(arrayListOf<ProcessInfo>())
+    var originalProcessInfo: ObservableList<ProcessInfo> = FXCollections.observableArrayList(arrayListOf<ProcessInfo>())
+    var filteredProcessInfo: ObservableList<String> = FXCollections.observableArrayList(arrayListOf<String>("1", "2"))
     fun formatMainFiles() {
         gmLoggerUtils.formatGMLogger("gmlogger")
         println("formatMainFiles end!")
@@ -36,7 +37,7 @@ class MainController : Controller() {
     }
 
     fun generateProcessInfoTable() {
-        processInfo.addAll(gmLoggerUtils.generateProcessInfoTable(mainProcessLogMap))
+        originalProcessInfo.addAll(gmLoggerUtils.generateProcessInfoTable(mainProcessLogMap))
         println("generateProcessInfoTable end!")
     }
 }
