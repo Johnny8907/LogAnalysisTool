@@ -1,12 +1,13 @@
 package ui
 
+import controller.LegalUpdateController
 import controller.MainController
-import javafx.scene.Parent
 import model.ProcessInfo
 import tornadofx.*
 
 class FileHandlerScreen : Fragment("文件操作") {
     private val controller: MainController by inject()
+    private val legalUpdateController: LegalUpdateController by inject()
     override val root = vbox {
         hbox {
             button("解压gmlogger文件") {
@@ -32,6 +33,12 @@ class FileHandlerScreen : Fragment("文件操作") {
                     generateProcessTable()
                 }
             }
+
+            button("更新法律文件") {
+                action {
+                    updateLegalDocs()
+                }
+            }
         }
         tableview<ProcessInfo> {
             items = controller.originalProcessInfo
@@ -42,9 +49,7 @@ class FileHandlerScreen : Fragment("文件操作") {
     }
 
     private fun uncompressFile() {
-        runAsync {
-            controller.formatMainFiles()
-        }
+        runAsync { controller.formatMainFiles() }
     }
 
     private fun loadLogs() {
@@ -52,17 +57,19 @@ class FileHandlerScreen : Fragment("文件操作") {
     }
 
     private fun generateProcessFile() {
-        runAsync {
-            controller.generateProcessIDFiles()
-        }
+        runAsync { controller.generateProcessIDFiles() }
     }
 
     private fun generateProcessTable() {
         runAsync { controller.generateProcessInfoTable() }
     }
+
+    private fun updateLegalDocs() {
+        runAsync { legalUpdateController.updateLegalDocs() }
+    }
 }
 
-class LogFilterScreen: Fragment("Log过滤") {
+class LogFilterScreen : Fragment("Log过滤") {
     override val root = vbox {
 
     }
