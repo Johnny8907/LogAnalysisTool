@@ -1,11 +1,11 @@
 package controller
 
 import tornadofx.Controller
-import FileHandler
+import LegalDocUtils
 
 class LegalUpdateController : Controller() {
     fun updateLegalDocs() {
-        val fileHandler = FileHandler()
+        val fileHandler = LegalDocUtils()
         fileHandler.execute()
     }
 }

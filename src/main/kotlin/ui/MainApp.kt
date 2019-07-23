@@ -1,7 +1,5 @@
 package ui
 
-import controller.MainController
-import model.ProcessInfo
 import tornadofx.*
 
 /**
@@ -13,6 +11,5 @@ class MainApp : App(MainView::class)
 class MainView : View() {
     override val root = tabpane {
         tab<FileHandlerScreen>()
-//        tab<LogFilterScreen>()
     }
 }

@@ -2,7 +2,10 @@ package ui
 
 import controller.LegalUpdateController
 import controller.MainController
+import controller.StringUpdateController
+import javafx.scene.control.TextField
 import model.ProcessInfo
+import org.apache.http.util.TextUtils
 import tornadofx.*
 
 class FileHandlerScreen : Fragment("文件操作") {
@@ -39,6 +42,12 @@ class FileHandlerScreen : Fragment("文件操作") {
                     updateLegalDocs()
                 }
             }
+
+            button("删除String中的特定字符串") {
+                action {
+                    openInternalWindow<MyView>()
+                }
+            }
         }
         tableview<ProcessInfo> {
             items = controller.originalProcessInfo
@@ -67,10 +76,31 @@ class FileHandlerScreen : Fragment("文件操作") {
     private fun updateLegalDocs() {
         runAsync { legalUpdateController.updateLegalDocs() }
     }
-}
 
-class LogFilterScreen : Fragment("Log过滤") {
-    override val root = vbox {
+    class MyView : View() {
+        private val stringUpdateController: StringUpdateController by inject()
+        var key: TextField by singleAssign()
+        var deleteChar: TextField by singleAssign()
+        override val root = vbox {
+            hbox {
+                label("字符串Key")
+                key = textfield()
+            }
+            hbox {
+                label("要删除的字符")
+                deleteChar = textfield()
+            }
+            button("LOGIN") {
+                action {
+                    deleteChar(key.text, deleteChar.text)
+                }
+            }
+        }
 
+        private fun deleteChar(key: String, deleteChar: String) {
+            if (key.isNotEmpty() && deleteChar.isNotEmpty()) {
+                runAsync { stringUpdateController.updateString(key, deleteChar) }
+            }
+        }
     }
 }

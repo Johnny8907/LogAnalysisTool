@@ -1,11 +1,11 @@
 import model.ProcessInfo
+import model.SequenceChartX
 import org.apache.commons.io.FileUtils
 import java.io.File
-import java.io.IOException
-import java.io.FileOutputStream
-import java.util.zip.GZIPInputStream
 import java.io.FileInputStream
-import model.SequenceChartX
+import java.io.FileOutputStream
+import java.io.IOException
+import java.util.zip.GZIPInputStream
 
 
 class GMLoggerUtils {
@@ -113,18 +113,22 @@ class GMLoggerUtils {
         return resultList
     }
 
-    fun generateProcessInfoTable(map:HashMap<Int, MutableList<String>>): List<ProcessInfo> {
+    fun generateProcessInfoTable(map: HashMap<Int, MutableList<String>>): List<ProcessInfo> {
         val result = mutableListOf<ProcessInfo>()
-        val comparator = Comparator<String> { s1,s2 ->
+        val comparator = Comparator<String> { s1, s2 ->
             compareDate(s1, s2)
         }
-        map.forEach {(key, value) ->
+        map.forEach { (key, value) ->
             val processInfo = ProcessInfo()
             val processStartTime = value.minWith(comparator)
             val processEndTime = value.maxWith(comparator)
             processInfo.processId = key.toString()
-            processInfo.processStartTime = denaliTemplate.getDateFromLine(processStartTime!!) + " " + denaliTemplate.getTimeFromLine(processStartTime)
-            processInfo.processEndTime = denaliTemplate.getDateFromLine(processEndTime!!) + " " + denaliTemplate.getTimeFromLine(processEndTime)
+            processInfo.processStartTime =
+                denaliTemplate.getDateFromLine(processStartTime!!) + " " + denaliTemplate.getTimeFromLine(
+                    processStartTime
+                )
+            processInfo.processEndTime =
+                denaliTemplate.getDateFromLine(processEndTime!!) + " " + denaliTemplate.getTimeFromLine(processEndTime)
             processInfo.processLogList.addAll(value)
             result.add(processInfo)
         }
@@ -175,7 +179,8 @@ class GMLoggerUtils {
     fun isTNClusterProcess(str: String): Boolean {
         return str.contains("com.telenav.arp: Denali-HMI:") && str.contains("cluster", true)
     }
-    private fun compareDate(s1:String, s2:String):Int {
+
+    private fun compareDate(s1: String, s2: String): Int {
         val d1 = denaliTemplate.getDateFromLine(s1)
         val d2 = denaliTemplate.getDateFromLine(s2)
         val d1array = d1.split("-")
@@ -183,7 +188,7 @@ class GMLoggerUtils {
         //对比log的月,日
         if (d1array[0].toInt() != d2array[0].toInt()) {
             return d1array[0].toInt() - d2array[0].toInt()
-        } else if (d1array[1].toInt() != d2array[1].toInt()){
+        } else if (d1array[1].toInt() != d2array[1].toInt()) {
             return d1array[1].toInt() - d2array[1].toInt()
         }
         //对比log的时间
